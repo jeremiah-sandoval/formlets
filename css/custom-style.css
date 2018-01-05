@@ -207,27 +207,27 @@ h1.inner-header{
     border-bottom: 0;
     background: #f1f1f1;
     color: #333;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
   }
-  .pricelist > li > span span{
+  .pricelist > li > span .prices{
     display: block;
     position: absolute;
     left: 50%;
     top: 100%;
-    margin: -52px 0 0 -52px;
+    margin: -62px 0 0 -62px;
     width: 120px;
     height: 120px;
     border-radius: 100px;
     border: 7px solid #fff;
-    background: #000;
+    background: #e54736;
     color: #fff;
     font-size: 1.176em;
     line-height: 90px;
     letter-spacing: normal;
   }
-    .pricelist > li > span span em {
+    .pricelist > li > span .prices em {
       font-size: 11px;
       display: block;
       font-weight: normal;
@@ -250,15 +250,15 @@ h1.inner-header{
       margin: 20px 0 10px;
       border-radius: 7px;
       padding: 10px 20px;
-      border: 2px solid #000;
-      color: #000;
+      border: 2px solid #e54736;
+      color: #e54736;
       font-weight: 700;
-      font-size: 1.076em;
+      font-size: 18px;
       text-transform: uppercase;
       text-decoration: none;
     }
     .price-item a.price-btn:hover{
-      background: #000; color: #fff; text-decoration: none;
+      background: #e54736; color: #fff; text-decoration: none;
     }
 
     .pricing-switch ul{
@@ -285,7 +285,7 @@ h1.inner-header{
       }
 
       form input.switch:checked + label.switch:before {
-        background: #faca33;
+        background: #e54736;
       }
 
       form input.switch:checked + label.switch:after {
@@ -404,6 +404,13 @@ h1.inner-header{
 }
 
 /** CUSTOM MEDIA QUERIES **/
+
+@media(max-width: 1199px){
+  .container{
+    width: 100%;
+    max-width: 100%;
+  }
+}
 
 /** Large devices (desktops, 992px and up) **/
 @media (max-width: 991px) {

@@ -339,6 +339,43 @@ h1.inner-header{
         width: 28px;
       }
 
+/** PRIVACY POLICY  AND TERMS OF SERVICE STYLES**/
+.privacy{
+  padding: 20px;
+}
+.terms{
+  padding: 40px 20px;
+}
+.privacy .sub-innerH{
+  text-align: center;
+  display: block;
+  padding: 20px 0 40px;
+}
+.privacy ul.side-nav, .terms ul.side-nav{
+  list-style: none;
+  padding: 10px 20px 20px;
+  background-color: #efefef;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.privacy ul li, .terms ul li{
+  padding: 15px 10px 0;
+}
+.privacy ul li a, .terms ul li a{
+  text-decoration: none;
+  color: #42a3b8;
+}
+.privacy ul li.sidenav-title, .terms ul li.sidenav-title{
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.terms .terms-list{
+  padding: 0px 10px 20px 30px;
+}
+
+
 #Footer-Container:before{
   content: "";
   display: block;

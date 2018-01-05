@@ -261,13 +261,10 @@ h1.inner-header{
       background: #000; color: #fff; text-decoration: none;
     }
 
-    .pricing-switch {
-      margin-bottom: 2rem;
-    }
     .pricing-switch ul{
       display: inline-block;
       float: right;
-      padding: 0 0 0 20px;
+      padding-left: 20px;
     }
     .pricing-switch li:first-child {
       font-size: 1rem;
@@ -410,6 +407,10 @@ h1.inner-header{
 
 /** Large devices (desktops, 992px and up) **/
 @media (max-width: 991px) {
+  .container{
+    width: 100%;
+    max-width: 100%;
+  }
   #navbarSupportedContent{
     position: relative;
     padding-bottom: 20px;
@@ -445,10 +446,18 @@ h1.inner-header{
     text-align: center;
   }
 
+  /** PRICING RESPONSIVE **/
+  .pricing-table .pricelist .price-item{
+    width: 48%;
+  }
 }
 
 /** Medium devices (tablets, 768px and up) **/
 @media (max-width: 767px) {
+  .container{
+    width: 100%;
+    max-width: 100%;
+  }
   #Footer-Container .copy {
     padding-top: 0px;
   }
@@ -480,4 +489,19 @@ h1.inner-header{
     max-width: 100%;
   }
 
+}
+
+@media (max-width: 575px){
+  .pricing-switch{
+    text-align: center;
+  }
+  .pricing-switch ul{
+    float: none;
+  }
+  .pricing-table .pricelist .price-item{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 20px;
+    min-height: 100%;
+  }
 }

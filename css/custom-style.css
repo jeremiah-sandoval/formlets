@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700');
 
 body{
   font-family: 'Source Sans Pro', sans-serif;
@@ -11,18 +11,16 @@ ul,li{
   padding: 0;
   margin: 0;
 }
+.btn1, .btn1:visited, .btn1:hover, .btn1:active{
+  text-decoration: none;
+  color: #fff !important;
+}
+.btn1,
 .btn-primary{
   font-size: 16px;
   text-transform: uppercase;
   border: 1px solid #ee5443;
   background-color: #ee5443;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ee5443), to(#ec6556));
-  background-image: -webkit-linear-gradient(top, #ee5443, #ec6556);
-  background-image: -moz-linear-gradient(top, #ee5443, #ec6556);
-  background-image: -ms-linear-gradient(top, #ee5443, #ec6556);
-  background-image: -o-linear-gradient(top, #ee5443, #ec6556);
-  background-image: linear-gradient(to bottom, #ee5443, #ec6556);
-  filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ee5443, endColorstr=#ec6556);
 }
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover,
 .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover,
@@ -30,8 +28,13 @@ ul,li{
 .open>.dropdown-toggle.btn-primary:hover,.btn-primary:hover, .btn-primary:visited,
 .btn-primary:active, .btn-primary:focus
 {
-  border: 1px solid #e54736 !important;
-  background-color: #e54736 !important;
+  border: 1px solid #c23a2b !important;
+  background-color: #c23a2b !important;
+}
+
+.btn1:hover {
+  border: 1px solid #c23a2b !important;
+  background-color: #c23a2b !important;
 }
 
 #Header-Container{
@@ -73,6 +76,15 @@ header{
 nav{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
+}
+.navbar-brand span{
+  font-size: 36px;
+  font-weight: 400;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+.navbar-brand span b{
+  font-weight: 700;
 }
 #navbarSupportedContent{
   position: absolute;
@@ -157,6 +169,13 @@ h1.inner-header{
     color: #fff;
     display: block;
     text-align: center;
+  }
+  .parallax-text h3 a{
+    color: #ffe38a !important;
+    text-decoration: none;
+  }
+  .parallax-text h3 a:hover{
+    color: #faca33 !important;
   }
 
 
@@ -405,7 +424,7 @@ h1.inner-header{
   font-size: 12px;
   font-weight: normal;
   color: #efefef;
-  padding-top: 35px;
+  padding-top: 10px;
 }
 #Footer-Container .social ul li{
   padding: 0 2px;
@@ -422,11 +441,15 @@ h1.inner-header{
   text-align: center;
   border-radius: 100%;
 }
+#Footer-Container .social ul li a:hover {
+  background-color: #42a3b8;
+}
 #Footer-Container .social ul li a:hover{
   text-decoration: none;
 }
-#Footer-Container .footer-links, #Footer-Container .social {
+#Footer-Container .footer-links {
   text-align: right;
+  padding-top: 35px;
 }
 #Footer-Container .footer-links ul li {
   padding: 0px 5px;
@@ -435,6 +458,9 @@ h1.inner-header{
   font-size: 12px;
   font-weight: normal;
   color: #efefef;
+}
+#Footer-Container .footer-links ul li a:hover{
+  color: #42a3b8;
 }
 #Footer-Container .footer-links ul li a:hover{
   text-decoration: none
@@ -472,6 +498,7 @@ h1.inner-header{
   .parallax-text{
     text-align: center;
   }
+
   #Content-Container .trusted-by .trusted-title h2{
     display: block;
     text-align: center;
@@ -503,10 +530,10 @@ h1.inner-header{
     max-width: 100%;
   }
   #Footer-Container .copy {
-    padding-top: 0px;
+    padding-top: 10px;
   }
   #Footer-Container .footer-links {
-    padding-top: 15px;
+    padding-top: 0px;
   }
   #Footer-Container .copy, #Footer-Container .social, #Footer-Container .footer-links{
     display: block;

@@ -3,13 +3,26 @@
 body{
   font-family: 'Source Sans Pro', sans-serif;
 }
-h1, h2, h3{
+h1{
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
+}
+h2, h3, h4{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
 }
 ul,li{
   padding: 0;
   margin: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #42a3b8;
+}
+a:hover{
+  text-decoration: none;
+  color: #16778c;
 }
 .btn1, .btn1:visited, .btn1:hover, .btn1:active{
   text-decoration: none;
@@ -128,6 +141,9 @@ h1.inner-header{
   margin: 0 auto;
   padding: 20px 0;
 }
+  .features .cta-container{
+    margin: 0;
+  }
 .cta-container span{
   font-size: 12px;
   font-style: italic;
@@ -358,41 +374,67 @@ h1.inner-header{
         width: 28px;
       }
 
-/** PRIVACY POLICY  AND TERMS OF SERVICE STYLES**/
-.privacy{
+/** PRIVACY POLICY, TERMS OF SERVICE AND FEATURES STYLES**/
+.privacy, .support{
   padding: 20px;
 }
-.terms{
-  padding: 40px 20px;
+.terms, .features{
+  padding: 50px 20px;
 }
-.privacy .sub-innerH{
+.privacy .sub-innerH, .support .sub-innerH{
   text-align: center;
   display: block;
   padding: 20px 0 40px;
 }
-.privacy ul.side-nav, .terms ul.side-nav{
+.privacy ul.side-nav, .terms ul.side-nav, .features ul.side-nav{
   list-style: none;
   padding: 10px 20px 20px;
   background-color: #efefef;
   border-radius: 5px;
   margin-bottom: 20px;
 }
-.privacy ul li, .terms ul li{
+.support ul{
+  list-style: none;
+  column-count: 3;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+}
+.privacy ul li, .terms ul li, .features ul li{
   padding: 15px 10px 0;
 }
-.privacy ul li a, .terms ul li a{
+.support ul li{
+  padding: 5px 0;
+}
+.privacy ul li a, .terms ul li a, .features ul li a, .support ul li a{
   text-decoration: none;
   color: #42a3b8;
 }
-.privacy ul li.sidenav-title, .terms ul li.sidenav-title{
+.privacy ul li a:hover,
+.terms ul li a:hover,
+.features ul li a:hover,
+.support ul li a:hover{
+  color: #16778c;
+}
+.privacy ul li.sidenav-title, .terms ul li.sidenav-title, .features ul li.sidenav-title{
   font-size: 18px;
   font-weight: bold;
   padding: 10px;
   border-bottom: 1px solid #dfdfdf;
 }
-.terms .terms-list{
+.terms .terms-list, .features .features-list{
   padding: 0px 10px 20px 30px;
 }
+.support .col-12{
+  margin: 0 0 30px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 3px 35px 0px rgba(219, 221, 236, 0.2);
+  box-shadow: 0px 3px 35px 0px rgba(219, 221, 236, 0.2);
+}
+.support .col-12:hover{
+  -webkit-box-shadow: 0px 32px 54px 0px rgba(219, 221, 236, 0.26);
+         box-shadow: 0px 32px 54px 0px rgba(219, 221, 236, 0.26);
+}
+
 
 
 #Footer-Container:before{
@@ -559,7 +601,11 @@ h1.inner-header{
   .container{
     max-width: 100%;
   }
-
+  .support ul{
+    column-count: 1;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+  }
 }
 
 @media (max-width: 575px){
@@ -575,4 +621,5 @@ h1.inner-header{
     margin: 0 0 20px;
     min-height: 100%;
   }
+
 }

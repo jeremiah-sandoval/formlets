@@ -672,5 +672,8 @@ h1.inner-header{
   .signup-login .login {
     border-right: 0px;
   }
+  .login, .signup{
+    padding: 0 20px;
+  }
 
 }

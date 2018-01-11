@@ -651,14 +651,11 @@ h1.inner-header{
   .navbar-brand span{
     font-size: 32px;
   }
-  .hero-text h1{
+.inner-header{
     font-size: 28px;
   }
-  h2{
-    font-size: 24px;
-  }
   h3{
-    font-size: 22px;
+    font-size: 24px;
   }
   .pricing-switch{
     text-align: center;

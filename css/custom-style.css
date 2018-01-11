@@ -663,11 +663,14 @@ h1.inner-header{
     margin: 0 0 20px;
     min-height: 100%;
   }
-  .features, .terms {
+  .features, .terms, .signup-login {
     padding: 40px 0px;
   }
   .privacy, .support{
     padding: 20px 10px;
+  }
+  .signup-login .login {
+    border-right: 0px;
   }
 
 }

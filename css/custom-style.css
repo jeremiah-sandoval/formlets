@@ -2,6 +2,8 @@
 
 body{
   font-family: 'Source Sans Pro', sans-serif;
+  color: #333;
+  font-size: 18px;
 }
 h1, h2{
   font-family: 'Source Sans Pro', sans-serif;
@@ -34,6 +36,7 @@ a:hover{
   text-transform: uppercase;
   border: 1px solid #ee5443;
   background-color: #ee5443;
+  cursor: pointer;
 }
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover,
 .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover,
@@ -48,6 +51,9 @@ a:hover{
 .btn1:hover {
   border: 1px solid #c23a2b !important;
   background-color: #c23a2b !important;
+}
+.nav-btn a{
+  font-weight: bold;
 }
 
 #Header-Container{
@@ -140,12 +146,13 @@ h1.inner-header{
   width: 216px;
   margin: 0 auto;
   padding: 20px 0;
+  cursor: pointer;
 }
   .features .cta-container{
     margin: 0;
   }
 .cta-container span{
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
   display: block;
   text-align: center;
@@ -493,7 +500,7 @@ h1.inner-header{
 }
 #Footer-Container .copy{
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
   color: #efefef;
   padding-top: 10px;
@@ -527,7 +534,7 @@ h1.inner-header{
   padding: 0px 5px;
 }
 #Footer-Container .footer-links ul li a{
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
   color: #efefef;
 }

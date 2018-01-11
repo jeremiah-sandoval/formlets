@@ -434,6 +434,20 @@ h1.inner-header{
   -webkit-box-shadow: 0px 32px 54px 0px rgba(219, 221, 236, 0.26);
          box-shadow: 0px 32px 54px 0px rgba(219, 221, 236, 0.26);
 }
+.support-content{
+  padding: 20px 0 40px;
+}
+.support-content h3{
+  padding-bottom: 20px;
+}
+.support-content img{
+  width: 100%;
+}
+.support-content ul{
+  column-count: 1;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+}
 
 /** LOGIN AND SIGNUP PAGE **/
 .signup-login{
@@ -452,9 +466,6 @@ h1.inner-header{
   display: block;
   padding: 20px 0;
 }
-
-
-
 
 #Footer-Container:before{
   content: "";

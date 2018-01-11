@@ -666,7 +666,7 @@ h1.inner-header{
   .features, .terms {
     padding: 40px 0px;
   }
-  .privacy .support{
+  .privacy, .support{
     padding: 20px 10px;
   }
 

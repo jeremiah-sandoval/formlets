@@ -631,6 +631,9 @@ h1.inner-header{
   .container{
     max-width: 100%;
   }
+  .features img{
+    width: 100%;
+  }
   .support ul{
     column-count: 1;
     -webkit-column-count: 1;
@@ -639,6 +642,15 @@ h1.inner-header{
 }
 
 @media (max-width: 575px){
+  .navbar{
+    padding: 10px 0px !important;
+  }
+  .navbar-brand img{
+    width: 45px;
+  }
+  .navbar-brand span{
+    font-size: 32px;
+  }
   .pricing-switch{
     text-align: center;
   }
@@ -650,6 +662,12 @@ h1.inner-header{
     max-width: 100%;
     margin: 0 0 20px;
     min-height: 100%;
+  }
+  .features, .terms {
+    padding: 40px 0px;
+  }
+  .privacy .support{
+    padding: 20px 10px;
   }
 
 }

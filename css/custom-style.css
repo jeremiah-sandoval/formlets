@@ -435,6 +435,25 @@ h1.inner-header{
          box-shadow: 0px 32px 54px 0px rgba(219, 221, 236, 0.26);
 }
 
+/** LOGIN AND SIGNUP PAGE **/
+.signup-login{
+  padding: 20px 20px 50px;
+}
+.login {
+  margin: 20px 0;
+  padding: 0 40px;
+  border-right: 1px solid #ccc;
+}
+.signup{
+  margin: 20px 0;
+  padding: 0 40px;
+}
+.agree-terms-privacy{
+  display: block;
+  padding: 20px 0;
+}
+
+
 
 
 #Footer-Container:before{

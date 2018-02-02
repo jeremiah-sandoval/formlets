@@ -30,23 +30,23 @@
                         </div>
                         <nav class="navbar navbar-links navbar-expand-lg px-2">
                           <ul class="navbar-nav ml-auto">
-                            <li class="nav-item align-self-center p-2">
-                              <a href="" class="nav-link">Forms</a>
+                            <li class="nav-item align-self-center p-2 active">
+                              <a href="" class="nav-link text-white text-uppercase font-weight-bold">Forms</a>
                             </li>
                             <li class="nav-item align-self-center p-2">
-                              <a href="" class="nav-link">Responses</a>
+                              <a href="" class="nav-link text-white text-uppercase font-weight-bold">Responses</a>
                             </li>
                             <li class="nav-item align-self-center p-2">
-                              <a href="" class="nav-link">Autoresponders</a>
+                              <a href="" class="nav-link text-white text-uppercase font-weight-bold">Autoresponders</a>
                             </li>
                             <li class="nav-item align-self-center p-2">
-                              <a href="" class="nav-link">Data Sources</a>
+                              <a href="" class="nav-link text-white text-uppercase font-weight-bold">Data Sources</a>
                             </li>
                             <li class="nav-item align-self-center p-2">
-                              <a href="" class="nav-link">Team</a>
+                              <a href="" class="nav-link text-white text-uppercase font-weight-bold">Team</a>
                             </li>
                             <li class="nav-item align-self-center p-2">
-                              <a href="" class="nav-link">Account</a>
+                              <a href="" class="nav-link text-white text-uppercase font-weight-bold">Account</a>
                             </li>
                           </ul>
                         </nav>
@@ -55,9 +55,8 @@
                         <nav class="navbar navbar-expand-lg p-0">
                             <ul class="navbar-nav notification ml-auto d-inline-flex">
 
-                                <li class="nav-item dropdown user-profile align-self-center">
-                                    <a  class="nav-link pl-3 pr-3" data-toggle="dropdown" aria-expanded="false">
-                                        <span class="float-right pl-3 pt-2 text-white"><i class="fa fa-angle-down"></i></span>
+                                <li class="nav-item dropdown user-profile">
+                                    <a class="nav-link pl-3 pr-3" data-toggle="dropdown" aria-expanded="false">
                                         <div class="media">
                                             <img src="dist/images/author2.jpg" alt="" class="d-flex mr-3 img-fluid formlets-rounded-circle-50" width="45" />
                                             <div class="media-body align-self-center">
@@ -66,11 +65,15 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <ul class="dropdown-menu border-bottom-0 rounded-0 py-0">
-                                        <li><a class="dropdown-item py-2" href="#"><i class="fa fa-user pr-2"></i> User Profile</a></li>
-                                        <li><a class="dropdown-item py-2" href="#"><i class="fa fa-cog pr-2"></i> Setting</a></li>
-                                        <li><a class="dropdown-item py-2" href="#"><i class="fa fa-sign-out pr-2"></i> logout</a></li>
-                                    </ul>
+                                </li>
+                                <li class="nav-item align-self-center p-2">
+                                  <a href="" class="nav-link align-self-center">
+                                    <div class="logout">
+                                      <span class="text-white d-inline-block"><i class="fas fa-sign-out-alt"></i></span>
+                                      <p class="logout-body mb-0 text-uppercase text-white font-weight-bold d-inline-block">Logout</p>
+                                    </div>
+
+                                  </a>
                                 </li>
                             </ul>
                         </nav>
@@ -83,12 +86,25 @@
         <!-- main-content-->
         <div class="wrapper mt-80">
             <div id="content">
-                <div class="row pt-2">
+                <div class="row pt-4">
                     <div class="col-12 col-sm-12">
                         <div class="row mb-4">
                             <div class="col-12 col-md-12">
                                 <div class="card formlets-border-light formlets-shadow mb-2">
                                     <div class="card-body">
+                                      <div class="d-block clearfix">
+                                        <div class="dataTables_length" id="example_length">
+                                          <label>Show
+                                            <select name="example_length" aria-controls="example" class="">
+                                              <option value="10">10</option>
+                                              <option value="25">25</option>
+                                              <option value="50">50</option>
+                                              <option value="100">100</option>
+                                            </select> entries
+                                          </label>
+                                        </div>
+                                      </div>
+
                                       <div class="form-gridlistview list-view">
                                         <ul class="row listview-header">
                                           <li class="form-name col-3 my-auto">Name</li>
@@ -99,7 +115,7 @@
                                           <li class="form-bounce col-1 my-auto">Bounce Rate</li>
                                           <li class="form-actions col-3 my-auto">Actions</li>
                                         </ul>
-                                        <ul>
+                                        <ul class="row form-data-container">
                                           <li class="form-item">
                                             <ul class="row form-details">
                                               <li class="form-name col-lg-3 my-auto">
@@ -111,57 +127,25 @@
 
                                               </li>
                                               <li class="form-status col-lg-2 my-auto">
+                                                <span class="font-weight-bold col-name">Status: </span>
                                                 <i class="fas fa-circle unpub"></i>
                                                 <span>Unpublished</span>
                                                 <a href="" class="pub">Publish</a>
                                               </li>
-                                              <li class="form-created col-lg-1 my-auto text-center">
-                                                <span>11/09/2017 20:20</span>
-                                              </li>
-                                              <li class="form-views col-lg-1 my-auto text-center">
-                                                <span>15</span>
-                                              </li>
-                                              <li class="form-responses col-lg-1 my-auto text-center">
-                                                <span>0</span>
-                                              </li>
-                                              <li class="form-bounce col-lg-1 my-auto text-center">
-                                                <span>0%</span>
-                                              </li>
-                                              <li class="form-actions col-lg-3 my-auto">
-                                                <a href="" class="form-action"><i></i>Edit Form</a>
-                                                <a href="" class="form-action"><i></i>Public View</a>
-                                                <a href="" class="form-action"><i></i>Respones / Stats</a>
-                                                <a href="" class="form-action"><i></i>Duplicate Form</a>
-                                                <a href="" class="form-action"><i></i>Delete Form</a>
-                                              </li>
-                                            </ul>
-                                          </li>
-
-                                          <li class="form-item">
-                                            <ul class="row form-details">
-                                              <li class="form-name col-lg-3 my-auto">
-                                                <!-- <i class="far fa-file-alt"></i> -->
-                                                <div class="form-titletag">
-                                                  <h6>Rate My Website Form Template</h6>
-                                                  <span>Add tags</span>
-                                                </div>
-
-                                              </li>
-                                              <li class="form-status col-lg-2 my-auto">
-                                                <i class="fas fa-circle pub"></i>
-                                                <span>Published</span>
-                                                <a href="" class="unpub">Unpublish</a>
-                                              </li>
                                               <li class="form-created col-lg-1 my-auto">
+                                                <span class="font-weight-bold col-name">Date Created: </span>
                                                 <span>11/09/2017 20:20</span>
                                               </li>
                                               <li class="form-views col-lg-1 my-auto">
+                                                <span class="font-weight-bold col-name">Page Views: </span>
                                                 <span>15</span>
                                               </li>
                                               <li class="form-responses col-lg-1 my-auto">
+                                                <span class="font-weight-bold col-name">Responses: </span>
                                                 <span>0</span>
                                               </li>
                                               <li class="form-bounce col-lg-1 my-auto">
+                                                <span class="font-weight-bold col-name">Bounce Rate: </span>
                                                 <span>0%</span>
                                               </li>
                                               <li class="form-actions col-lg-3 my-auto">
@@ -174,43 +158,6 @@
                                             </ul>
                                           </li>
 
-
-                                          <li class="form-item">
-                                            <ul class="row form-details">
-                                              <li class="form-name col-lg-3 my-auto">
-                                                <!-- <i class="far fa-file-alt"></i> -->
-                                                <div class="form-titletag">
-                                                  <h6>Rate My Website Form Template</h6>
-                                                  <span>Add tags</span>
-                                                </div>
-
-                                              </li>
-                                              <li class="form-status col-lg-2 my-auto">
-                                                <i class="fas fa-circle pub"></i>
-                                                <span>Published</span>
-                                                <a href="" class="unpub">Unpublish</a>
-                                              </li>
-                                              <li class="form-created col-lg-1 my-auto">
-                                                <span>11/09/2017 20:20</span>
-                                              </li>
-                                              <li class="form-views col-lg-1 my-auto">
-                                                <span>15</span>
-                                              </li>
-                                              <li class="form-responses col-lg-1 my-auto">
-                                                <span>0</span>
-                                              </li>
-                                              <li class="form-bounce col-lg-1 my-auto">
-                                                <span>0%</span>
-                                              </li>
-                                              <li class="form-actions col-lg-3 my-auto">
-                                                <a href="" class="form-action"><i></i>Edit Form</a>
-                                                <a href="" class="form-action"><i></i>Public View</a>
-                                                <a href="" class="form-action"><i></i>Respones / Stats</a>
-                                                <a href="" class="form-action"><i></i>Duplicate Form</a>
-                                                <a href="" class="form-action"><i></i>Delete Form</a>
-                                              </li>
-                                            </ul>
-                                          </li>
 
 
                                           <li class="form-item">
@@ -250,6 +197,67 @@
                                             </ul>
                                           </li>
 
+                                        </ul>
+
+                                      </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card formlets-border-light formlets-shadow mb-2">
+                                    <div class="card-body">
+                                      <div class="form-gridlistview grid-view">
+                                        <ul class="row listview-header">
+                                          <li class="form-name col-3 my-auto">Name</li>
+                                          <li class="form-status col-2 my-auto">Status</li>
+                                          <li class="form-created col-1 my-auto">Date Created</li>
+                                          <li class="form-views col-1 my-auto">Page Views</li>
+                                          <li class="form-responses col-1 my-auto">Responses</li>
+                                          <li class="form-bounce col-1 my-auto">Bounce Rate</li>
+                                          <li class="form-actions col-3 my-auto">Actions</li>
+                                        </ul>
+                                        <ul class="row form-data-container">
+                                          <li class="form-item">
+                                            <ul class="row form-details">
+                                              <li class="form-name col-lg-3 my-auto">
+                                                <!-- <i class="far fa-file-alt"></i> -->
+                                                <div class="form-titletag">
+                                                  <h6>Rate My Website Form Template</h6>
+                                                  <span>Add tags</span>
+                                                </div>
+
+                                              </li>
+                                              <li class="form-status col-lg-2 my-auto">
+                                                <span class="font-weight-bold col-name">Status: </span>
+                                                <i class="fas fa-circle unpub"></i>
+                                                <span>Unpublished</span>
+                                                <a href="" class="pub">Publish</a>
+                                              </li>
+                                              <li class="form-created col-lg-1 my-auto">
+                                                <span class="font-weight-bold col-name">Date Created: </span>
+                                                <span>11/09/2017 20:20</span>
+                                              </li>
+                                              <li class="form-views col-lg-1 my-auto">
+                                                <span class="font-weight-bold col-name">Page Views: </span>
+                                                <span>15</span>
+                                              </li>
+                                              <li class="form-responses col-lg-1 my-auto">
+                                                <span class="font-weight-bold col-name">Responses: </span>
+                                                <span>0</span>
+                                              </li>
+                                              <li class="form-bounce col-lg-1 my-auto">
+                                                <span class="font-weight-bold col-name">Bounce Rate: </span>
+                                                <span>0%</span>
+                                              </li>
+                                              <li class="form-actions col-lg-3 my-auto">
+                                                <a href="" class="form-action"><i></i>Edit Form</a>
+                                                <a href="" class="form-action"><i></i>Public View</a>
+                                                <a href="" class="form-action"><i></i>Respones / Stats</a>
+                                                <a href="" class="form-action"><i></i>Duplicate Form</a>
+                                                <a href="" class="form-action"><i></i>Delete Form</a>
+                                              </li>
+                                            </ul>
+                                          </li>
 
                                           <li class="form-item">
                                             <ul class="row form-details">
@@ -262,20 +270,25 @@
 
                                               </li>
                                               <li class="form-status col-lg-2 my-auto">
-                                                <i class="fas fa-circle pub"></i>
-                                                <span>Published</span>
-                                                <a href="" class="unpub">Unpublish</a>
+                                                <span class="font-weight-bold col-name">Status: </span>
+                                                <i class="fas fa-circle unpub"></i>
+                                                <span>Unpublished</span>
+                                                <a href="" class="pub">Publish</a>
                                               </li>
                                               <li class="form-created col-lg-1 my-auto">
+                                                <span class="font-weight-bold col-name">Date Created: </span>
                                                 <span>11/09/2017 20:20</span>
                                               </li>
                                               <li class="form-views col-lg-1 my-auto">
+                                                <span class="font-weight-bold col-name">Page Views: </span>
                                                 <span>15</span>
                                               </li>
                                               <li class="form-responses col-lg-1 my-auto">
+                                                <span class="font-weight-bold col-name">Responses: </span>
                                                 <span>0</span>
                                               </li>
                                               <li class="form-bounce col-lg-1 my-auto">
+                                                <span class="font-weight-bold col-name">Bounce Rate: </span>
                                                 <span>0%</span>
                                               </li>
                                               <li class="form-actions col-lg-3 my-auto">
@@ -284,6 +297,50 @@
                                                 <a href="" class="form-action"><i></i>Respones / Stats</a>
                                                 <a href="" class="form-action"><i></i>Duplicate Form</a>
                                                 <a href="" class="form-action"><i></i>Delete Form</a>
+                                              </li>
+                                            </ul>
+                                          </li>
+
+                                          <li class="form-item">
+                                            <ul class="row form-details">
+                                              <li class="form-name col-lg-3 my-auto">
+                                                <!-- <i class="far fa-file-alt"></i> -->
+                                                <div class="form-titletag">
+                                                  <h6>Rate My Website Form Template</h6>
+                                                  <span>Add tags</span>
+                                                </div>
+
+                                              </li>
+                                              <li class="form-status col-lg-2 my-auto">
+                                                <span class="font-weight-bold col-name">Status: </span>
+                                                <i class="fas fa-circle unpub"></i>
+                                                <span>Unpublished</span>
+                                                <a href="" class="pub">Publish</a>
+                                              </li>
+                                              <li class="form-created col-lg-1 my-auto">
+                                                <span class="font-weight-bold col-name">Date Created: </span>
+                                                <span>11/09/2017 20:20</span>
+                                              </li>
+                                              <li class="form-views col-lg-1 my-auto">
+                                                <span class="font-weight-bold col-name">Page Views: </span>
+                                                <span>15</span>
+                                              </li>
+                                              <li class="form-responses col-lg-1 my-auto">
+                                                <span class="font-weight-bold col-name">Responses: </span>
+                                                <span>0</span>
+                                              </li>
+                                              <li class="form-bounce col-lg-1 my-auto">
+                                                <span class="font-weight-bold col-name">Bounce Rate: </span>
+                                                <span>0%</span>
+                                              </li>
+                                              <li class=" form-actions col-lg-3 my-auto">
+                                                <div>
+                                                  <a href="" class="form-action"><i></i>Edit Form</a>
+                                                  <a href="" class="form-action"><i></i>Public View</a>
+                                                  <a href="" class="form-action"><i></i>Respones / Stats</a>
+                                                  <a href="" class="form-action"><i></i>Duplicate Form</a>
+                                                  <a href="" class="form-action"><i></i>Delete Form</a>
+                                                </div>
                                               </li>
                                             </ul>
                                           </li>

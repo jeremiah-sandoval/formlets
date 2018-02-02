@@ -475,7 +475,9 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   right: 300px; }
 
 .header {
-  background-color: #18292F; }
+  background-color: #18292F;
+  margin-top: -1px;
+}
 
 #header-fix.active {
   background-color: #18292F;
@@ -711,13 +713,10 @@ footer{
   padding: 0 20px;
 }
 .navbar-links li:hover,
-.navbar ul li:hover{
+.navbar ul li:hover,
+.navbar-link li.active,
+.navbar ul li.active{
   background-color: #42A3B8;
-}
-.navbar-links ul li a{
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
 }
 /*======================== Selection Css ===============================*/
 ::selection {
@@ -1100,15 +1099,14 @@ select[multiple], select[size] {
   margin-top: -1px; }
 
 /*======================== Grid List View ===============================*/
-.form-gridlistview ul.listview-header{
+.list-view ul.listview-header{
   list-style: none;
   background-color: #18292F;
   padding: 10px;
   margin: 0;
   border-radius: 5px;
-  display: none;
 }
-.form-gridlistview ul.listview-header li{
+.list-view ul.listview-header li{
   display: inline-block;
   color: #fff;
   font-size: 16px;
@@ -1116,7 +1114,7 @@ select[multiple], select[size] {
   padding: 0 5px;
   margin: 0;
 }
-.form-item{
+.list-view .form-item{
   width: 100%;
   margin-top: 2px;
 }
@@ -1126,14 +1124,65 @@ select[multiple], select[size] {
 .list-view li.form-item:nth-child(even){
   background-color: #FAFAFA;
 }
+.list-view .form-item ul.form-details li{
+  padding: 0 5px;
+  line-height: 24px;
+}
+.list-view .col-name{
+  display: none;
+}
+
+
+.grid-view ul.listview-header{
+  display: none;
+}
+.grid-view .form-item{
+  -ms-flex: 0 0 32.333333%;
+  flex: 0 0 32.333333%;
+  max-width: 32.333333%;
+  background-color: #fafafa;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  margin: .33%;
+  position: relative;
+}
+.grid-view ul.form-details{
+  display: block;
+}
+.grid-view .form-item ul.form-details li{
+  padding: 0 5px;
+  line-height: 24px;
+  max-width: 70%;
+  display: block;
+}
+.grid-view .form-item ul.form-details li.form-actions{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background-color: #efefef;
+  padding: 20px 10px;
+}
+.grid-view .form-item ul.form-details li.form-actions a.form-action{
+  display: block;
+  text-align: center;
+  margin: 5px 0 0;
+}
+.grid-view .col-name{
+  display: inline-block;
+}
+
+
+
+.form-data-container{
+  margin: 0 !important;
+}
 .form-item ul.form-details{
   padding: 10px;
   margin: 0;
 }
-.form-item ul.form-details li{
-  padding: 0 5px;
-  line-height: 24px;
-}
+
 .form-name .form-titletag{
   display: inline-block;
   vertical-align: top;
@@ -1192,27 +1241,47 @@ select[multiple], select[size] {
   color: #fff;
 }
 
-/* Extra small devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap */
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .form-gridlistview ul.listview-header{
-    display: block;
+/*======================== Media Queries ===============================*/
+@media (max-width: 1439px){
+  .grid-view .form-item{
+    -ms-flex: 0 0 49%;
+    flex: 0 0 49%;
+    max-width: 49%;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (max-width: 1199px) {
+  .media-body, .logout-body{
+    display: none !important;
+  }
+  .media img{
+    margin: 0 !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 991px) {
+  .form-gridlistview ul.listview-header{
+    display: none;
+  }
+  .col-name{
+    display: inline-block;
+  }
+  .grid-view .form-item{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 5px 0;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 767px) {
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 575px) {
 
 }

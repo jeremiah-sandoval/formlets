@@ -616,6 +616,9 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 footer{
   background-color: #fff;
 }
+.social-links{
+  text-align: right;
+}
 .footer-logo, .copy{
   display: inline-block;
   vertical-align: middle;
@@ -1243,6 +1246,7 @@ select[multiple], select[size] {
   font-size: 36px;
   color: #18292F;
   padding-right: 5px;
+  padding-top: 7px;
 }
 .form-name h6{
   margin:0;
@@ -1351,6 +1355,10 @@ select[multiple], select[size] {
     flex: 0 0 100%;
     max-width: 100%;
     margin: 5px 0;
+  }
+  .footer-logo, .copy, .links, .social{
+    display: block;
+    text-align: center;
   }
 }
 

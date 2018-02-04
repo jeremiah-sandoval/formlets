@@ -710,13 +710,23 @@ footer{
 }
 .navbar-links{
   display: inline-block;
-  padding: 0 20px;
+  padding: 0;
 }
 .navbar-links li:hover,
 .navbar ul li:hover,
 .navbar-link li.active,
 .navbar ul li.active{
   background-color: #42A3B8;
+}
+.mobile-menu{
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  display: none;
+}
+.mobile-menu a{
+  color: #fff;
 }
 /*======================== Selection Css ===============================*/
 ::selection {
@@ -796,6 +806,7 @@ select[multiple], select[size] {
   display: none;
   z-index: 999; }
   .scrollup i {
+    font-size: 24px;
     line-height: 2em; }
 
 /*======================== Breadcrumb Css ===============================*/
@@ -1174,7 +1185,45 @@ select[multiple], select[size] {
 }
 
 
-
+.sort_table, .length_table, .grid_list_view{
+  display: inline-block;
+}
+.search-form, .sort_table .form-control, .length_table .form-control{
+  border-radius: 5px;
+  display: inline;
+}
+.sort_table .form-control, .length_table .form-control{
+  width: auto;
+}
+.grid_list_view ul li{
+  display: inline-block;
+  background-color: #18292F;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.grid_list_view ul li.active, .grid_list_view ul li:hover{
+  background-color: #42A3B8;
+}
+.grid_list_view ul li.disabled{
+  pointer-events: none;
+  background-color: #999;
+}
+.pagination ul li{
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #18292F;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.pagination ul li.active, .pagination ul li:hover{
+  cursor: pointer;
+  background-color: #fff;
+  color: #18292F;
+  border: 1px solid #18292F;
+}
 .form-data-container{
   margin: 0 !important;
 }
@@ -1186,6 +1235,9 @@ select[multiple], select[size] {
 .form-name .form-titletag{
   display: inline-block;
   vertical-align: top;
+}
+.form-name .form-titletag span{
+  color: #42A3B8;
 }
 .form-name i{
   font-size: 36px;
@@ -1260,8 +1312,34 @@ select[multiple], select[size] {
   }
 }
 
+@media(min-width: 992px){
+  .navbar-links{
+    display: inline-block;
+  }
+}
+
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 991px) {
+  .site-logo{
+    display: block;
+    padding: 10px 0;
+  }
+  .mobile-menu{
+    display: block;
+  }
+  .navbar-links{
+    display: none;
+  }
+  .navbar-links ul{
+    padding-bottom: 10px;
+  }
+  .navbar-links ul li{
+    width: 100%;
+    text-align: center;
+  }
+  .sort_table, .length_table{
+    float: left;
+  }
   .form-gridlistview ul.listview-header{
     display: none;
   }

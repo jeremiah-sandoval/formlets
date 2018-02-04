@@ -1185,8 +1185,9 @@ select[multiple], select[size] {
 }
 .grid-view .col-name{
   display: inline-block;
+  padding-left: 35px;
+  padding-right: 5px;
 }
-
 
 .sort_table, .length_table, .grid_list_view{
   display: inline-block;

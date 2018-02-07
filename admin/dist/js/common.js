@@ -22,9 +22,24 @@
      Grid List View
      =============================================================*/
 
+     function setHeight() {
+       var actionHeight = $('.grid-view ul li ul.form-details li.form-actions').height() + 20;
+       var formdetailsHeight = $('.grid-view ul li ul.form-details').height() + 20;
+
+       if(actionHeight > formdetailsHeight){
+         $('.grid-view ul li ul.form-details').css('height', actionHeight);
+       }
+       else if(actionHeight < formdetailsHeight){
+         // $('.grid-view ul li ul.form-details').css('height', 'auto');
+         // $('.grid-view ul li ul.form-details li.form-actions').css('height', '100%');
+       }
+     }
+
     if ($(window).width() < 992) {
+     $('#listview-icon').addClass('disabled');
      $('#gridlistview').addClass('grid-view');
      $('#gridview-icon').addClass('active');
+     setHeight();
     }
     else {
      $('#gridlistview').addClass('list-view');
@@ -32,6 +47,8 @@
     }
 
     $(window).resize(function() {
+      setHeight();
+
       if ($(window).width() < 992) {
          $('#gridlistview').removeClass('list-view');
          $('#listview-icon').removeClass('active');
@@ -49,6 +66,7 @@
       $('#gridlistview').addClass('grid-view');
       $('#listview-icon').removeClass('active');
       $('#gridview-icon').addClass('active');
+      setHeight();
     });
 
     $('#listview-icon').click(function(){
@@ -56,7 +74,9 @@
       $('#gridlistview').addClass('list-view');
       $('#gridview-icon').removeClass('active');
       $('#listview-icon').addClass('active');
+      $('.list-view ul li ul.form-details').css('height', 'auto');
     });
+
 
     /*==============================================================
      Back To Top

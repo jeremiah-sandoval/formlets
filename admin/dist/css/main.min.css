@@ -4,7 +4,7 @@
 /*-----------------------Border Color------------------------------------*/
 /*-----------------------Line Height------------------------------------*/
 /*-----------------------Font Family Import------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,100i,300,300i,400,400i,500,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,100i,300,300i,400,400i,500,600,700,700i,900,900i");
 body {
   background: #f6fafb;
   margin: 0px;
@@ -703,13 +703,17 @@ footer{
 .site-logo img{
   width: 40px;
 }
-.site-logo span, .site-logo strong{
+.site-logo span, .site-logo b{
   color: #fff;
   font-size: 28px;
+}
+.site-logo b{
+  font-weight: 600;
 }
 .site-logo span{
   vertical-align: middle;
   padding-left: 5px;
+  font-weight: 300;
 }
 .navbar-links{
   display: inline-block;
@@ -1142,9 +1146,14 @@ select[multiple], select[size] {
   padding: 0 5px;
   line-height: 24px;
 }
+.list-view .form-status span.stat-response{
+  display: block;
+  color: #42A3B8;
+}
 .list-view .col-name{
   display: none;
 }
+
 
 
 .grid-view ul.listview-header{
@@ -1166,22 +1175,27 @@ select[multiple], select[size] {
 .grid-view .form-item ul.form-details li{
   padding: 0 5px;
   line-height: 24px;
-  max-width: 70%;
+  max-width: 65%;
   display: block;
 }
 .grid-view .form-item ul.form-details li.form-actions{
   position: absolute;
   top: 0;
   right: 0;
-  width: 30%;
-  height: 100%;
+  width: 35%;
   background-color: #efefef;
-  padding: 20px 10px;
+  padding: 10px;
 }
-.grid-view .form-item ul.form-details li.form-actions a.form-action{
+.grid-view .form-item ul.form-details li.form-actions a.form-action,
+.grid-view .form-item ul.form-details li.form-actions a.pub,
+.grid-view .form-item ul.form-details li.form-actions a.unpub{
   display: block;
   text-align: center;
   margin: 5px 0 0;
+}
+.grid-view .form-status span.stat-response{
+  display: inline-block;
+  color: #42A3B8;
 }
 .grid-view .col-name{
   display: inline-block;
@@ -1258,7 +1272,8 @@ select[multiple], select[size] {
 .form-status i.pub {
   color: #09802C;
 }
-.form-status a.unpub{
+
+.form-actions a.unpub{
   color: #F3952A;
   border: 1px solid #F3952A;
   padding: 0 5px;
@@ -1266,11 +1281,11 @@ select[multiple], select[size] {
   margin: 2px;
   display: inline-block;
 }
-.form-status a.unpub:hover{
+.form-actions a.unpub:hover{
   background-color: #F3952A;
   color: #fff;
 }
-.form-status a.pub{
+.form-actions a.pub{
   color: #09802C;
   border: 1px solid #09802C;
   padding: 0 5px;
@@ -1278,7 +1293,7 @@ select[multiple], select[size] {
   margin: 2px;
   display: inline-block;
 }
-.form-status a.pub:hover{
+.form-actions a.pub:hover{
   background-color: #09802C;
   color: #fff;
 }
@@ -1370,5 +1385,20 @@ select[multiple], select[size] {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575px) {
-
+  .grid-view .form-item ul.form-details{
+    height: auto !important;
+  }
+  .grid-view .form-item ul.form-details li{
+    max-width: 100%;
+  }
+  .grid-view .form-item ul.form-details li.form-actions{
+    position: relative;
+    width: 100%;
+    background-color: #efefef;
+  }
+  .grid-view .form-item ul.form-details li.form-actions a.form-action,
+  .grid-view .form-item ul.form-details li.form-actions a.pub,
+  .grid-view .form-item ul.form-details li.form-actions a.unpub{
+    display: inline-block;
+  }
 }

@@ -1299,7 +1299,7 @@ select[multiple], select[size] {
 
 /*=========================== Account ==================================*/
 .Account-Content{
-  margin: 0 200px;
+  margin: 0 300px;
   padding-bottom: 30px;
 }
 #CompanyDetails{
@@ -1369,7 +1369,7 @@ select[multiple], select[size] {
     display: block !important;
   }
   .Account-Content{
-    margin: 0 100px;
+    margin: 0 150px;
     padding-bottom: 20px;
   }
 }

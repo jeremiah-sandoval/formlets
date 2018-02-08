@@ -94,35 +94,9 @@
                               <div class="card formlets-border-light formlets-shadow form-tab">
                                   <div class="card-body">
                                       <div class="row Account-Content">
-                                        <div class="col-12 wizard formlets-relative">
-                                          <div class="wizard-inner">
-                                              <div class="connecting-line"></div>
-                                              <ul class="nav nav-fill flex-column flex-sm-row mb-2" id="myTab" role="tablist">
-                                                  <li class="nav-item">
-                                                      <a class="nav-link formlets-dark formlets-relative round-tab text-left p-0 active" data-toggle="tab" href="#left1" role="tab" aria-controls="left1" aria-expanded="false">
-                                                          <i class="fas fa-user formlets-rounded-circle-50 text-white h5 mb-0 formlets-relative"></i>
-                                                          <small class="d-block formlets-font-weight-800">Account Information</small>
-                                                      </a>
-                                                  </li>
-                                                  <li class="nav-item">
-                                                      <a class="nav-link formlets-dark formlets-relative round-tab text-sm-center text-left p-0" data-toggle="tab" href="#left2" role="tab" aria-controls="left2" aria-expanded="true">
-                                                          <i class="fas fa-columns formlets-rounded-circle-50 text-white h5 mb-0 formlets-relative"></i>
-                                                          <small class="d-block formlets-font-weight-800">Choose Plan</small>
-                                                      </a>
-                                                  </li>
-                                                  <li class="nav-item">
-                                                      <a class="nav-link formlets-dark formlets-relative round-tab text-sm-right text-left p-0" data-toggle="tab" href="#left3" role="tab" aria-controls="left3" aria-expanded="false">
-                                                          <i class="fas fa-credit-card formlets-rounded-circle-50 text-white h5 mb-0 formlets-relative"></i>
-                                                          <small class="d-block formlets-font-weight-800">Payment</small>
-                                                      </a>
-                                                  </li>
-                                              </ul>
-                                          </div>
-                                      </div>
                                           <div class="col-12">
-
                                               <div class="tab-content" id="myTabContent">
-                                                  <div class="tab-pane fade active show" id="left1" role="tabpanel" aria-labelledby="left1" aria-expanded="true">
+                                                  <div>
                                                     <h3 class="py-2">Account Information</h3>
                                                       <div class='row pb-4'>
                                                           <div class="col-12">
@@ -702,134 +676,10 @@
                                                             </div>
                                                         </div>
                                                       </div>
-                                                      <a href="#" class="btn btn-primary btn-sm rounded-0 text-uppercase px-5 float-sm-right mt-sm-0 mt-3"> Submit </a>
+                                                      <a href="selectplan.html" class="btn btn-primary btn-sm rounded-0 text-uppercase px-5 float-sm-right mt-sm-0 mt-3"> Submit </a>
                                                   </div>
-                                                  <div class="tab-pane fade" id="left2" role="tabpanel" aria-labelledby="left2" aria-expanded="true">
-                                                    <h3 class="py-2">Choose Your Plan</h3>
-                                                      <div class='row pb-4'>
-                                                          <div class="col-12">
-                                                            <div class="form choosePlan">
-                                                                <div class="form-group">
-                                                                    <label class="formlets-font-weight-800 formlets-dark d-block">Plan</label>
-                                                                    <div class="form-check">
-                                                                      <input class="form-check-input" type="radio" name="formletsPlan" id="plan1" value="1" checked>
-                                                                      <label class="form-check-label" for="plan1">
-                                                                        <h6 class="m-0">Personal</h6>
-                                                                        <span>Free</span>
-                                                                      </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                      <input class="form-check-input" type="radio" name="formletsPlan" id="plan2" value="0">
-                                                                      <label class="form-check-label" for="plan2">
-                                                                        <h6 class="m-0">Small Business</h6>
-                                                                        <span>$18 / month</span>
-                                                                      </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                      <input class="form-check-input" type="radio" name="formletsPlan" id="plan3" value="0">
-                                                                      <label class="form-check-label" for="plan3">
-                                                                        <h6 class="m-0">Professional</h6>
-                                                                        <span>$48 / month</span>
-                                                                      </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                      <input class="form-check-input" type="radio" name="formletsPlan" id="plan4" value="0">
-                                                                      <label class="form-check-label" for="plan4">
-                                                                        <h6 class="m-0">Enterprise</h6>
-                                                                        <span>$160 / month</span>
-                                                                      </label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                          </div>
 
-                                                      </div>
-                                                      <a href="#" class="btn btn-primary btn-sm rounded-0 text-uppercase px-5 float-sm-right mt-sm-0 mt-3"> Submit </a>
-                                                  </div>
-                                                  <div class="tab-pane fade" id="left3" role="tabpanel" aria-labelledby="left3" aria-expanded="true">
-                                                    <h3 class="py-2">Payment</h3>
-                                                      <div class="row pb-4">
-                                                        <div class="col-12">
-                                                          <img class="pr-3" src="dist/images/visa.png" alt="" height="30">
-                                                          <img class="pr-3" src="dist/images/mastercard.png" alt="" height="30">
-                                                        </div>
-                                                      </div>
-                                                      <div class="row pb-2">
-                                                        <div class="col-12">
-                                                          <div class="form chooseCC">
-                                                              <div class="form-group">
-                                                                  <label class="formlets-font-weight-800 formlets-dark d-block">Choose Credit Card</label>
-                                                                  <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="formletsCC" id="CC1" value="1" checked>
-                                                                    <label class="form-check-label" for="CC1">
-                                                                      <span class="pr-2">**** **** **** 1234</span>
-                                                                      <img class="" src="dist/images/visa.png" alt="" height="20">
-                                                                    </label>
-                                                                  </div>
-                                                                  <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="formletsCC" id="CC2" value="1">
-                                                                    <label class="form-check-label" for="CC2">
-                                                                      <span class="pr-2">**** **** **** 1234</span>
-                                                                      <img class="" src="dist/images/mastercard.png" alt="" height="20">
-                                                                    </label>
-                                                                  </div>
-                                                                  <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="formletsCC" id="CC3" value="1">
-                                                                    <label class="form-check-label" for="CC3">
-                                                                      <span class="pr-2">Add new Credi Card</span>
-                                                                    </label>
-                                                                  </div>
 
-                                                              </div>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                      <div class='row creditCardDetails pb-4'>
-                                                          <div class="col-12">
-                                                              <div class="form">
-                                                                  <div class="form-group">
-                                                                      <label class="formlets-font-weight-800 formlets-dark">Cardholder's Name*</label>
-                                                                      <input type="text" class="form-control bg-transparent" placeholder="" />
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-12">
-                                                              <div class="form">
-                                                                  <div class="form-group">
-                                                                      <label class="formlets-font-weight-800 formlets-dark">Card Number*</label>
-                                                                      <input type="text" class="form-control bg-transparent" placeholder="" />
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                          <div class="col-12">
-                                                              <div class="form">
-                                                                  <div class="form-group">
-                                                                      <label class="formlets-font-weight-800 formlets-dark">Expiry Date*</label>
-                                                                      <div class="row">
-                                                                        <div class="col-6">
-                                                                          <input type="text" class="form-control bg-transparent" placeholder="MM" />
-                                                                        </div>
-                                                                        <div class="col-6">
-                                                                          <input type="text" class="form-control bg-transparent" placeholder="YYYY" />
-                                                                        </div>
-                                                                      </div>
-
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-
-                                                          <div class="col-6">
-                                                              <div class="form">
-                                                                  <div class="form-group">
-                                                                      <label class="formlets-font-weight-800 formlets-dark">CVV/CVC*</label>
-                                                                      <input type="text" class="form-control bg-transparent" placeholder="" />
-                                                                      <small class="form-text">3-4 Digits Code</small>
-                                                                  </div>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                      <a href="#" class="btn btn-primary btn-sm rounded-0 text-uppercase px-5 float-sm-right mt-sm-0 mt-3"> Submit </a>
-                                                  </div>
 
                                               </div>
                                           </div>

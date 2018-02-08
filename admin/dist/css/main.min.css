@@ -950,6 +950,17 @@ select[multiple], select[size] {
   z-index: 0;
   border: 1.5px solid #e6e6e6;
   transition: .2s; }
+[type=radio] + label:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  z-index: 0;
+  border-radius: 100%;
+  border: 1.5px solid #e6e6e6;
+  transition: .2s; }
 
 [type=checkbox]:checked + label:before {
   top: 3px;
@@ -958,6 +969,14 @@ select[multiple], select[size] {
   height: 17px;
   border-width: 2px;
   border-color: transparent #18292F #18292F transparent;
+  -webkit-transform: rotate(40deg);
+  transform-origin: 100% 100%; }
+[type=radio]:checked + label:before {
+  width: 17px;
+  height: 17px;
+  border-width: 2px;
+  background-color: #18292F;
+  border: 1.5px solid #e6e6e6
   -webkit-transform: rotate(40deg);
   transform-origin: 100% 100%; }
 
@@ -1313,6 +1332,22 @@ select[multiple], select[size] {
   color: #fff;
 }
 
+/*=========================== Account ==================================*/
+#CompanyDetails{
+  display: none;
+}
+#CompanyDetails .col-lg-6{
+  float: none !important;
+}
+.choosePlan .form-check,
+.chooseCC .form-check{
+  background: #fafafa;
+  padding: 10px;
+  border-radius: 5px;
+  border: #efefef;
+}
+
+
 /*======================== Media Queries ===============================*/
 @media (max-width: 1439px){
   .grid-view .form-item{
@@ -1329,6 +1364,9 @@ select[multiple], select[size] {
   }
   .media img{
     margin: 0 !important;
+  }
+  .accountTab .media-body {
+    display: block !important;
   }
 }
 

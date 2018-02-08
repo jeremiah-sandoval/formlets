@@ -77,6 +77,17 @@
       $('.list-view ul li ul.form-details').css('height', 'auto');
     });
 
+    /*==============================================================
+     Account - Company Details
+     =============================================================*/
+     $('#companyCheck').click(function() {
+        if( $(this).is(':checked')) {
+            $("#CompanyDetails").show();
+        } else {
+            $("#CompanyDetails").hide();
+        }
+    });
+
 
     /*==============================================================
      Back To Top

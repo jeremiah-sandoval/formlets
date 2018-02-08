@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>formlets</title>
+        <link rel="icon" href="dist/images/formlets-icon.png" />
+        <link rel="icon" type="image/png" href="https://formlets.com/static/img/favicon.ico" />
+        <!--Plugin CSS-->
+        <link href="dist/css/plugins.min.css" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        <!--main Css-->
+        <link href="dist/css/main.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- header-->
+        <div id="header-fix" class="header fixed-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-10 col-xl-9 align-self-center">
+                        <div class="site-logo">
+                            <a href="index.html">
+                              <img src="dist/images/logo-black.svg" alt="" class="img-fluid" />
+                              <span>
+                                <b>form</b>lets
+                              </span>
+                            </a>
+                        </div>
+                        <div id="mobile-menu" class="mobile-menu"><a href="#"><i class="fas fa-bars"></i></a></div>
+                        <nav class="navbar navbar-links navbar-expand-lg">
+                          <ul class="navbar-nav ml-auto">
+                            <li class="nav-item align-self-center p-2">
+                              <a href="" class="nav-link text-white text-uppercase font-weight-bold">Forms</a>
+                            </li>
+                            <li class="nav-item align-self-center p-2">
+                              <a href="" class="nav-link text-white text-uppercase font-weight-bold">Responses</a>
+                            </li>
+                            <li class="nav-item align-self-center p-2">
+                              <a href="" class="nav-link text-white text-uppercase font-weight-bold">Autoresponders</a>
+                            </li>
+                            <li class="nav-item align-self-center p-2">
+                              <a href="" class="nav-link text-white text-uppercase font-weight-bold">Data Sources</a>
+                            </li>
+                            <li class="nav-item align-self-center p-2">
+                              <a href="" class="nav-link text-white text-uppercase font-weight-bold">Team</a>
+                            </li>
+                            <li class="nav-item align-self-center p-2 active">
+                              <a href="" class="nav-link text-white text-uppercase font-weight-bold">Account</a>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-lg-2 col-xl-3 d-none d-lg-inline-block my-auto">
+                        <nav class="navbar navbar-expand-lg p-0">
+                            <ul class="navbar-nav notification ml-auto d-inline-flex">
+
+                                <li class="nav-item dropdown user-profile">
+                                    <a class="nav-link pl-3 pr-3" data-toggle="dropdown" aria-expanded="false">
+                                        <div class="media">
+                                            <img src="dist/images/author2.jpg" alt="" class="d-flex mr-3 img-fluid formlets-rounded-circle-50" width="45" />
+                                            <div class="media-body align-self-center">
+                                                <p class="mb-1 text-white text-uppercase font-weight-bold">John Deo</p>
+                                                <small class="formlets-primary-light font-weight-bold text-white"> Admin </small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item align-self-center p-2">
+                                  <a href="" class="nav-link align-self-center">
+                                    <div class="logout">
+                                      <span class="text-white d-inline-block"><i class="fas fa-sign-out-alt"></i></span>
+                                      <p class="logout-body mb-0 text-uppercase text-white font-weight-bold d-inline-block">Logout</p>
+                                    </div>
+
+                                  </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End header-->
+
+        <!-- main-content-->
+        <div class="wrapper mt-80">
+            <div id="content">
+                <div class="row pt-4">
+                    <div class="col-12 col-sm-12">
+                      <div class="row mb-4">
+                          <div class="col-12 col-md-12">
+                              <div class="card formlets-border-light formlets-shadow form-tab">
+                                  <div class="card-body">
+                                      <div class="row">
+                                          <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                                              <ul class="nav nav-fill flex-column accountTab" id="myTab" role="tablist">
+                                                  <li class="nav-item">
+                                                      <a class="nav-link formlets-dark formlets-relative px-0 rounded active" data-toggle="tab" href="#left1" role="tab" aria-controls="left1" aria-expanded="true">
+                                                          <div class="media text-left pl-3">
+                                                              <div class="d-flex mr-3 align-self-center"><h2 class="mb-0 formlets-font-weight-900 fas fa-user"></h2></div>
+                                                              <div class="media-body formlets-line-height-1_5">
+                                                                  <h6 class="mb-0 text-uppercase">Step 1</h6>
+                                                                  Account Information
+                                                              </div>
+                                                          </div>
+                                                      </a>
+                                                  </li>
+                                                  <li class="nav-item">
+                                                      <a class="nav-link formlets-dark formlets-relative px-0 rounded" data-toggle="tab" href="#left2" role="tab" aria-controls="left2" aria-expanded="true">
+                                                          <div class="media text-left pl-3">
+                                                              <div class="d-flex mr-3 align-self-center"><h2 class="mb-0 formlets-font-weight-900 fas fa-columns"></h2></div>
+                                                              <div class="media-body formlets-line-height-1_5">
+                                                                  <h6 class="mb-0 text-uppercase">Step 2</h6>
+                                                                  Choose Your Plan
+                                                              </div>
+                                                          </div>
+                                                      </a>
+                                                  </li>
+                                                  <li class="nav-item">
+                                                      <a class="nav-link formlets-dark formlets-relative px-0 rounded" data-toggle="tab" href="#left3" role="tab" aria-controls="left3" aria-expanded="true">
+                                                          <div class="media text-left pl-3">
+                                                              <div class="d-flex mr-3 align-self-center"><h2 class="mb-0 formlets-font-weight-900 fas fa-credit-card"></h2></div>
+                                                              <div class="media-body formlets-line-height-1_5">
+                                                                  <h6 class="mb-0 text-uppercase">Step 3</h6>
+                                                                  Payment
+                                                              </div>
+                                                          </div>
+                                                      </a>
+                                                  </li>
+
+                                              </ul>
+                                          </div>
+                                          <div class="col-12 col-lg-9">
+
+                                              <div class="tab-content" id="myTabContent">
+                                                  <div class="tab-pane fade active show" id="left1" role="tabpanel" aria-labelledby="left1" aria-expanded="true">
+                                                    <h3 class="py-2">Account Information</h3>
+                                                      <div class='row pb-4'>
+                                                          <div class="col-12 col-md-6">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark">First Name*</label>
+                                                                      <input type="text" class="form-control bg-transparent" placeholder="" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-12 col-md-6">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark">Last Name*</label>
+                                                                      <input type="text" class="form-control bg-transparent" placeholder="" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-12 col-md-6">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark">Email*</label>
+                                                                      <input type="email" class="form-control bg-transparent" placeholder="" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-12 col-md-6">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark">Phone</label>
+                                                                      <input type="text" class="form-control bg-transparent" placeholder="" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-12 col-md-6">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark">Old Password</label>
+                                                                      <input type="password" class="form-control bg-transparent" placeholder="" />
+                                                                      <small class="form-text">Leave this blank if you don't update your password.</small>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-12 col-md-6">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark">New Password</label>
+                                                                      <input type="password" class="form-control bg-transparent" placeholder="" />
+                                                                      <small class="form-text">Leave this blank if you don't update your password.</small>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-12 col-sm 6 col-md-3">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark">Date Format</label>
+                                                                      <select class="form-control">
+                                                                        <option>MM/DD/YYYY</option>
+                                                                        <option>DD/MM/YYYY</option>
+                                                                        <option>YYYY-MM-DD</option>
+                                                                    </select>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-12 col-sm 6 col-md-3">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark d-block">Time Format</label>
+                                                                      <div class="form-check-inline">
+                                                                        <input class="form-check-input" type="radio" name="timeformat" id="timeformat1" value="1" checked>
+                                                                        <label class="form-check-label" for="timeformat1">
+                                                                          12 Hour
+                                                                        </label>
+                                                                      </div>
+                                                                      <div class="form-check-inline">
+                                                                        <input class="form-check-input" type="radio" name="timeformat" id="timeformat0" value="0">
+                                                                        <label class="form-check-label" for="timeformat0">
+                                                                          24 Hour
+                                                                        </label>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-12 col-md-6">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark">Time Zone</label>
+                                                                        <select class="form-control" name="timezone">
+                                                          								<option value="">Select time zone</option>
+                                                          																	<option>Africa/Abidjan</option>
+                                                          																	<option>Africa/Accra</option>
+                                                          																	<option>Africa/Addis_Ababa</option>
+                                                          																	<option>Africa/Algiers</option>
+                                                          																	<option>Africa/Asmara</option>
+                                                          																	<option>Africa/Bamako</option>
+                                                          																	<option>Africa/Bangui</option>
+                                                          																	<option>Africa/Banjul</option>
+                                                          																	<option>Africa/Bissau</option>
+                                                          																	<option>Africa/Blantyre</option>
+                                                          																	<option>Africa/Brazzaville</option>
+                                                          																	<option>Africa/Bujumbura</option>
+                                                          																	<option>Africa/Cairo</option>
+                                                          																	<option>Africa/Casablanca</option>
+                                                          																	<option>Africa/Ceuta</option>
+                                                          																	<option>Africa/Conakry</option>
+                                                          																	<option>Africa/Dakar</option>
+                                                          																	<option>Africa/Dar_es_Salaam</option>
+                                                          																	<option>Africa/Djibouti</option>
+                                                          																	<option>Africa/Douala</option>
+                                                          																	<option>Africa/El_Aaiun</option>
+                                                          																	<option>Africa/Freetown</option>
+                                                          																	<option>Africa/Gaborone</option>
+                                                          																	<option>Africa/Harare</option>
+                                                          																	<option>Africa/Johannesburg</option>
+                                                          																	<option>Africa/Juba</option>
+                                                          																	<option>Africa/Kampala</option>
+                                                          																	<option>Africa/Khartoum</option>
+                                                          																	<option>Africa/Kigali</option>
+                                                          																	<option>Africa/Kinshasa</option>
+                                                          																	<option>Africa/Lagos</option>
+                                                          																	<option>Africa/Libreville</option>
+                                                          																	<option>Africa/Lome</option>
+                                                          																	<option>Africa/Luanda</option>
+                                                          																	<option>Africa/Lubumbashi</option>
+                                                          																	<option>Africa/Lusaka</option>
+                                                          																	<option>Africa/Malabo</option>
+                                                          																	<option>Africa/Maputo</option>
+                                                          																	<option>Africa/Maseru</option>
+                                                          																	<option>Africa/Mbabane</option>
+                                                          																	<option>Africa/Mogadishu</option>
+                                                          																	<option>Africa/Monrovia</option>
+                                                          																	<option>Africa/Nairobi</option>
+                                                          																	<option>Africa/Ndjamena</option>
+                                                          																	<option>Africa/Niamey</option>
+                                                          																	<option>Africa/Nouakchott</option>
+                                                          																	<option>Africa/Ouagadougou</option>
+                                                          																	<option>Africa/Porto-Novo</option>
+                                                          																	<option>Africa/Sao_Tome</option>
+                                                          																	<option>Africa/Tripoli</option>
+                                                          																	<option>Africa/Tunis</option>
+                                                          																	<option>Africa/Windhoek</option>
+                                                          																	<option>America/Adak</option>
+                                                          																	<option>America/Anchorage</option>
+                                                          																	<option>America/Anguilla</option>
+                                                          																	<option>America/Antigua</option>
+                                                          																	<option>America/Araguaina</option>
+                                                          																	<option>America/Argentina/Buenos_Aires</option>
+                                                          																	<option>America/Argentina/Catamarca</option>
+                                                          																	<option>America/Argentina/Cordoba</option>
+                                                          																	<option>America/Argentina/Jujuy</option>
+                                                          																	<option>America/Argentina/La_Rioja</option>
+                                                          																	<option>America/Argentina/Mendoza</option>
+                                                          																	<option>America/Argentina/Rio_Gallegos</option>
+                                                          																	<option>America/Argentina/Salta</option>
+                                                          																	<option>America/Argentina/San_Juan</option>
+                                                          																	<option>America/Argentina/San_Luis</option>
+                                                          																	<option>America/Argentina/Tucuman</option>
+                                                          																	<option>America/Argentina/Ushuaia</option>
+                                                          																	<option>America/Aruba</option>
+                                                          																	<option>America/Asuncion</option>
+                                                          																	<option>America/Atikokan</option>
+                                                          																	<option>America/Bahia</option>
+                                                          																	<option>America/Bahia_Banderas</option>
+                                                          																	<option>America/Barbados</option>
+                                                          																	<option>America/Belem</option>
+                                                          																	<option>America/Belize</option>
+                                                          																	<option>America/Blanc-Sablon</option>
+                                                          																	<option>America/Boa_Vista</option>
+                                                          																	<option>America/Bogota</option>
+                                                          																	<option>America/Boise</option>
+                                                          																	<option>America/Cambridge_Bay</option>
+                                                          																	<option>America/Campo_Grande</option>
+                                                          																	<option>America/Cancun</option>
+                                                          																	<option>America/Caracas</option>
+                                                          																	<option>America/Cayenne</option>
+                                                          																	<option>America/Cayman</option>
+                                                          																	<option>America/Chicago</option>
+                                                          																	<option>America/Chihuahua</option>
+                                                          																	<option>America/Costa_Rica</option>
+                                                          																	<option>America/Creston</option>
+                                                          																	<option>America/Cuiaba</option>
+                                                          																	<option>America/Curacao</option>
+                                                          																	<option>America/Danmarkshavn</option>
+                                                          																	<option>America/Dawson</option>
+                                                          																	<option>America/Dawson_Creek</option>
+                                                          																	<option>America/Denver</option>
+                                                          																	<option>America/Detroit</option>
+                                                          																	<option>America/Dominica</option>
+                                                          																	<option>America/Edmonton</option>
+                                                          																	<option>America/Eirunepe</option>
+                                                          																	<option>America/El_Salvador</option>
+                                                          																	<option>America/Fortaleza</option>
+                                                          																	<option>America/Glace_Bay</option>
+                                                          																	<option>America/Godthab</option>
+                                                          																	<option>America/Goose_Bay</option>
+                                                          																	<option>America/Grand_Turk</option>
+                                                          																	<option>America/Grenada</option>
+                                                          																	<option>America/Guadeloupe</option>
+                                                          																	<option>America/Guatemala</option>
+                                                          																	<option>America/Guayaquil</option>
+                                                          																	<option>America/Guyana</option>
+                                                          																	<option>America/Halifax</option>
+                                                          																	<option>America/Havana</option>
+                                                          																	<option>America/Hermosillo</option>
+                                                          																	<option>America/Indiana/Indianapolis</option>
+                                                          																	<option>America/Indiana/Knox</option>
+                                                          																	<option>America/Indiana/Marengo</option>
+                                                          																	<option>America/Indiana/Petersburg</option>
+                                                          																	<option>America/Indiana/Tell_City</option>
+                                                          																	<option>America/Indiana/Vevay</option>
+                                                          																	<option>America/Indiana/Vincennes</option>
+                                                          																	<option>America/Indiana/Winamac</option>
+                                                          																	<option>America/Inuvik</option>
+                                                          																	<option>America/Iqaluit</option>
+                                                          																	<option>America/Jamaica</option>
+                                                          																	<option>America/Juneau</option>
+                                                          																	<option>America/Kentucky/Louisville</option>
+                                                          																	<option>America/Kentucky/Monticello</option>
+                                                          																	<option>America/Kralendijk</option>
+                                                          																	<option>America/La_Paz</option>
+                                                          																	<option>America/Lima</option>
+                                                          																	<option>America/Los_Angeles</option>
+                                                          																	<option>America/Lower_Princes</option>
+                                                          																	<option>America/Maceio</option>
+                                                          																	<option>America/Managua</option>
+                                                          																	<option>America/Manaus</option>
+                                                          																	<option>America/Marigot</option>
+                                                          																	<option>America/Martinique</option>
+                                                          																	<option>America/Matamoros</option>
+                                                          																	<option>America/Mazatlan</option>
+                                                          																	<option>America/Menominee</option>
+                                                          																	<option>America/Merida</option>
+                                                          																	<option>America/Metlakatla</option>
+                                                          																	<option>America/Mexico_City</option>
+                                                          																	<option>America/Miquelon</option>
+                                                          																	<option>America/Moncton</option>
+                                                          																	<option>America/Monterrey</option>
+                                                          																	<option>America/Montevideo</option>
+                                                          																	<option>America/Montserrat</option>
+                                                          																	<option>America/Nassau</option>
+                                                          																	<option>America/New_York</option>
+                                                          																	<option>America/Nipigon</option>
+                                                          																	<option>America/Nome</option>
+                                                          																	<option>America/Noronha</option>
+                                                          																	<option>America/North_Dakota/Beulah</option>
+                                                          																	<option>America/North_Dakota/Center</option>
+                                                          																	<option>America/North_Dakota/New_Salem</option>
+                                                          																	<option>America/Ojinaga</option>
+                                                          																	<option>America/Panama</option>
+                                                          																	<option>America/Pangnirtung</option>
+                                                          																	<option>America/Paramaribo</option>
+                                                          																	<option>America/Phoenix</option>
+                                                          																	<option>America/Port-au-Prince</option>
+                                                          																	<option>America/Port_of_Spain</option>
+                                                          																	<option>America/Porto_Velho</option>
+                                                          																	<option>America/Puerto_Rico</option>
+                                                          																	<option>America/Rainy_River</option>
+                                                          																	<option>America/Rankin_Inlet</option>
+                                                          																	<option>America/Recife</option>
+                                                          																	<option>America/Regina</option>
+                                                          																	<option>America/Resolute</option>
+                                                          																	<option>America/Rio_Branco</option>
+                                                          																	<option>America/Santa_Isabel</option>
+                                                          																	<option>America/Santarem</option>
+                                                          																	<option>America/Santiago</option>
+                                                          																	<option>America/Santo_Domingo</option>
+                                                          																	<option>America/Sao_Paulo</option>
+                                                          																	<option>America/Scoresbysund</option>
+                                                          																	<option>America/Sitka</option>
+                                                          																	<option>America/St_Barthelemy</option>
+                                                          																	<option>America/St_Johns</option>
+                                                          																	<option>America/St_Kitts</option>
+                                                          																	<option>America/St_Lucia</option>
+                                                          																	<option>America/St_Thomas</option>
+                                                          																	<option>America/St_Vincent</option>
+                                                          																	<option>America/Swift_Current</option>
+                                                          																	<option>America/Tegucigalpa</option>
+                                                          																	<option>America/Thule</option>
+                                                          																	<option>America/Thunder_Bay</option>
+                                                          																	<option>America/Tijuana</option>
+                                                          																	<option>America/Toronto</option>
+                                                          																	<option>America/Tortola</option>
+                                                          																	<option>America/Vancouver</option>
+                                                          																	<option>America/Whitehorse</option>
+                                                          																	<option>America/Winnipeg</option>
+                                                          																	<option>America/Yakutat</option>
+                                                          																	<option>America/Yellowknife</option>
+                                                          																	<option>Antarctica/Casey</option>
+                                                          																	<option>Antarctica/Davis</option>
+                                                          																	<option>Antarctica/DumontDUrville</option>
+                                                          																	<option>Antarctica/Macquarie</option>
+                                                          																	<option>Antarctica/Mawson</option>
+                                                          																	<option>Antarctica/McMurdo</option>
+                                                          																	<option>Antarctica/Palmer</option>
+                                                          																	<option>Antarctica/Rothera</option>
+                                                          																	<option>Antarctica/Syowa</option>
+                                                          																	<option>Antarctica/Troll</option>
+                                                          																	<option>Antarctica/Vostok</option>
+                                                          																	<option>Arctic/Longyearbyen</option>
+                                                          																	<option>Asia/Aden</option>
+                                                          																	<option>Asia/Almaty</option>
+                                                          																	<option>Asia/Amman</option>
+                                                          																	<option>Asia/Anadyr</option>
+                                                          																	<option>Asia/Aqtau</option>
+                                                          																	<option>Asia/Aqtobe</option>
+                                                          																	<option>Asia/Ashgabat</option>
+                                                          																	<option>Asia/Baghdad</option>
+                                                          																	<option>Asia/Bahrain</option>
+                                                          																	<option>Asia/Baku</option>
+                                                          																	<option>Asia/Bangkok</option>
+                                                          																	<option>Asia/Beirut</option>
+                                                          																	<option>Asia/Bishkek</option>
+                                                          																	<option>Asia/Brunei</option>
+                                                          																	<option>Asia/Chita</option>
+                                                          																	<option>Asia/Choibalsan</option>
+                                                          																	<option>Asia/Colombo</option>
+                                                          																	<option>Asia/Damascus</option>
+                                                          																	<option>Asia/Dhaka</option>
+                                                          																	<option>Asia/Dili</option>
+                                                          																	<option>Asia/Dubai</option>
+                                                          																	<option>Asia/Dushanbe</option>
+                                                          																	<option>Asia/Gaza</option>
+                                                          																	<option>Asia/Hebron</option>
+                                                          																	<option>Asia/Ho_Chi_Minh</option>
+                                                          																	<option>Asia/Hong_Kong</option>
+                                                          																	<option>Asia/Hovd</option>
+                                                          																	<option>Asia/Irkutsk</option>
+                                                          																	<option>Asia/Jakarta</option>
+                                                          																	<option>Asia/Jayapura</option>
+                                                          																	<option>Asia/Jerusalem</option>
+                                                          																	<option>Asia/Kabul</option>
+                                                          																	<option>Asia/Kamchatka</option>
+                                                          																	<option>Asia/Karachi</option>
+                                                          																	<option>Asia/Kathmandu</option>
+                                                          																	<option>Asia/Khandyga</option>
+                                                          																	<option>Asia/Kolkata</option>
+                                                          																	<option>Asia/Krasnoyarsk</option>
+                                                          																	<option>Asia/Kuala_Lumpur</option>
+                                                          																	<option>Asia/Kuching</option>
+                                                          																	<option>Asia/Kuwait</option>
+                                                          																	<option>Asia/Macau</option>
+                                                          																	<option>Asia/Magadan</option>
+                                                          																	<option>Asia/Makassar</option>
+                                                          																	<option selected="">Asia/Manila</option>
+                                                          																	<option>Asia/Muscat</option>
+                                                          																	<option>Asia/Nicosia</option>
+                                                          																	<option>Asia/Novokuznetsk</option>
+                                                          																	<option>Asia/Novosibirsk</option>
+                                                          																	<option>Asia/Omsk</option>
+                                                          																	<option>Asia/Oral</option>
+                                                          																	<option>Asia/Phnom_Penh</option>
+                                                          																	<option>Asia/Pontianak</option>
+                                                          																	<option>Asia/Pyongyang</option>
+                                                          																	<option>Asia/Qatar</option>
+                                                          																	<option>Asia/Qyzylorda</option>
+                                                          																	<option>Asia/Rangoon</option>
+                                                          																	<option>Asia/Riyadh</option>
+                                                          																	<option>Asia/Sakhalin</option>
+                                                          																	<option>Asia/Samarkand</option>
+                                                          																	<option>Asia/Seoul</option>
+                                                          																	<option>Asia/Shanghai</option>
+                                                          																	<option>Asia/Singapore</option>
+                                                          																	<option>Asia/Srednekolymsk</option>
+                                                          																	<option>Asia/Taipei</option>
+                                                          																	<option>Asia/Tashkent</option>
+                                                          																	<option>Asia/Tbilisi</option>
+                                                          																	<option>Asia/Tehran</option>
+                                                          																	<option>Asia/Thimphu</option>
+                                                          																	<option>Asia/Tokyo</option>
+                                                          																	<option>Asia/Ulaanbaatar</option>
+                                                          																	<option>Asia/Urumqi</option>
+                                                          																	<option>Asia/Ust-Nera</option>
+                                                          																	<option>Asia/Vientiane</option>
+                                                          																	<option>Asia/Vladivostok</option>
+                                                          																	<option>Asia/Yakutsk</option>
+                                                          																	<option>Asia/Yekaterinburg</option>
+                                                          																	<option>Asia/Yerevan</option>
+                                                          																	<option>Atlantic/Azores</option>
+                                                          																	<option>Atlantic/Bermuda</option>
+                                                          																	<option>Atlantic/Canary</option>
+                                                          																	<option>Atlantic/Cape_Verde</option>
+                                                          																	<option>Atlantic/Faroe</option>
+                                                          																	<option>Atlantic/Madeira</option>
+                                                          																	<option>Atlantic/Reykjavik</option>
+                                                          																	<option>Atlantic/South_Georgia</option>
+                                                          																	<option>Atlantic/St_Helena</option>
+                                                          																	<option>Atlantic/Stanley</option>
+                                                          																	<option>Australia/Adelaide</option>
+                                                          																	<option>Australia/Brisbane</option>
+                                                          																	<option>Australia/Broken_Hill</option>
+                                                          																	<option>Australia/Currie</option>
+                                                          																	<option>Australia/Darwin</option>
+                                                          																	<option>Australia/Eucla</option>
+                                                          																	<option>Australia/Hobart</option>
+                                                          																	<option>Australia/Lindeman</option>
+                                                          																	<option>Australia/Lord_Howe</option>
+                                                          																	<option>Australia/Melbourne</option>
+                                                          																	<option>Australia/Perth</option>
+                                                          																	<option>Australia/Sydney</option>
+                                                          																	<option>Europe/Amsterdam</option>
+                                                          																	<option>Europe/Andorra</option>
+                                                          																	<option>Europe/Athens</option>
+                                                          																	<option>Europe/Belgrade</option>
+                                                          																	<option>Europe/Berlin</option>
+                                                          																	<option>Europe/Bratislava</option>
+                                                          																	<option>Europe/Brussels</option>
+                                                          																	<option>Europe/Bucharest</option>
+                                                          																	<option>Europe/Budapest</option>
+                                                          																	<option>Europe/Busingen</option>
+                                                          																	<option>Europe/Chisinau</option>
+                                                          																	<option>Europe/Copenhagen</option>
+                                                          																	<option>Europe/Dublin</option>
+                                                          																	<option>Europe/Gibraltar</option>
+                                                          																	<option>Europe/Guernsey</option>
+                                                          																	<option>Europe/Helsinki</option>
+                                                          																	<option>Europe/Isle_of_Man</option>
+                                                          																	<option>Europe/Istanbul</option>
+                                                          																	<option>Europe/Jersey</option>
+                                                          																	<option>Europe/Kaliningrad</option>
+                                                          																	<option>Europe/Kiev</option>
+                                                          																	<option>Europe/Lisbon</option>
+                                                          																	<option>Europe/Ljubljana</option>
+                                                          																	<option>Europe/London</option>
+                                                          																	<option>Europe/Luxembourg</option>
+                                                          																	<option>Europe/Madrid</option>
+                                                          																	<option>Europe/Malta</option>
+                                                          																	<option>Europe/Mariehamn</option>
+                                                          																	<option>Europe/Minsk</option>
+                                                          																	<option>Europe/Monaco</option>
+                                                          																	<option>Europe/Moscow</option>
+                                                          																	<option>Europe/Oslo</option>
+                                                          																	<option>Europe/Paris</option>
+                                                          																	<option>Europe/Podgorica</option>
+                                                          																	<option>Europe/Prague</option>
+                                                          																	<option>Europe/Riga</option>
+                                                          																	<option>Europe/Rome</option>
+                                                          																	<option>Europe/Samara</option>
+                                                          																	<option>Europe/San_Marino</option>
+                                                          																	<option>Europe/Sarajevo</option>
+                                                          																	<option>Europe/Simferopol</option>
+                                                          																	<option>Europe/Skopje</option>
+                                                          																	<option>Europe/Sofia</option>
+                                                          																	<option>Europe/Stockholm</option>
+                                                          																	<option>Europe/Tallinn</option>
+                                                          																	<option>Europe/Tirane</option>
+                                                          																	<option>Europe/Uzhgorod</option>
+                                                          																	<option>Europe/Vaduz</option>
+                                                          																	<option>Europe/Vatican</option>
+                                                          																	<option>Europe/Vienna</option>
+                                                          																	<option>Europe/Vilnius</option>
+                                                          																	<option>Europe/Volgograd</option>
+                                                          																	<option>Europe/Warsaw</option>
+                                                          																	<option>Europe/Zagreb</option>
+                                                          																	<option>Europe/Zaporozhye</option>
+                                                          																	<option>Europe/Zurich</option>
+                                                          																	<option>Indian/Antananarivo</option>
+                                                          																	<option>Indian/Chagos</option>
+                                                          																	<option>Indian/Christmas</option>
+                                                          																	<option>Indian/Cocos</option>
+                                                          																	<option>Indian/Comoro</option>
+                                                          																	<option>Indian/Kerguelen</option>
+                                                          																	<option>Indian/Mahe</option>
+                                                          																	<option>Indian/Maldives</option>
+                                                          																	<option>Indian/Mauritius</option>
+                                                          																	<option>Indian/Mayotte</option>
+                                                          																	<option>Indian/Reunion</option>
+                                                          																	<option>Pacific/Apia</option>
+                                                          																	<option>Pacific/Auckland</option>
+                                                          																	<option>Pacific/Bougainville</option>
+                                                          																	<option>Pacific/Chatham</option>
+                                                          																	<option>Pacific/Chuuk</option>
+                                                          																	<option>Pacific/Easter</option>
+                                                          																	<option>Pacific/Efate</option>
+                                                          																	<option>Pacific/Enderbury</option>
+                                                          																	<option>Pacific/Fakaofo</option>
+                                                          																	<option>Pacific/Fiji</option>
+                                                          																	<option>Pacific/Funafuti</option>
+                                                          																	<option>Pacific/Galapagos</option>
+                                                          																	<option>Pacific/Gambier</option>
+                                                          																	<option>Pacific/Guadalcanal</option>
+                                                          																	<option>Pacific/Guam</option>
+                                                          																	<option>Pacific/Honolulu</option>
+                                                          																	<option>Pacific/Johnston</option>
+                                                          																	<option>Pacific/Kiritimati</option>
+                                                          																	<option>Pacific/Kosrae</option>
+                                                          																	<option>Pacific/Kwajalein</option>
+                                                          																	<option>Pacific/Majuro</option>
+                                                          																	<option>Pacific/Marquesas</option>
+                                                          																	<option>Pacific/Midway</option>
+                                                          																	<option>Pacific/Nauru</option>
+                                                          																	<option>Pacific/Niue</option>
+                                                          																	<option>Pacific/Norfolk</option>
+                                                          																	<option>Pacific/Noumea</option>
+                                                          																	<option>Pacific/Pago_Pago</option>
+                                                          																	<option>Pacific/Palau</option>
+                                                          																	<option>Pacific/Pitcairn</option>
+                                                          																	<option>Pacific/Pohnpei</option>
+                                                          																	<option>Pacific/Port_Moresby</option>
+                                                          																	<option>Pacific/Rarotonga</option>
+                                                          																	<option>Pacific/Saipan</option>
+                                                          																	<option>Pacific/Tahiti</option>
+                                                          																	<option>Pacific/Tarawa</option>
+                                                          																	<option>Pacific/Tongatapu</option>
+                                                          																	<option>Pacific/Wake</option>
+                                                          																	<option>Pacific/Wallis</option>
+                                                          																	<option>UTC</option>
+                                                          															</select>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+
+                                                          <div class="col-12">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark d-block"></label>
+                                                                      <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="companyCheck">
+                                                                        <label class="form-check-label" for="companyCheck">
+                                                                          Company Account
+                                                                        </label>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+
+                                                      </div>
+
+
+                                                      <div class="row pb-4" id="CompanyDetails">
+                                                        <h5 class="pl-2">Company Details</h5>
+                                                        <div class="col-12 col-lg-6">
+                                                            <div class="form">
+                                                                <div class="form-group">
+                                                                    <label class="formlets-font-weight-800 formlets-dark">Company Name*</label>
+                                                                    <input type="text" class="form-control bg-transparent" placeholder="" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-100"></div>
+                                                        <div class="col-12 col-lg-6">
+                                                            <div class="form">
+                                                                <div class="form-group">
+                                                                    <label class="formlets-font-weight-800 formlets-dark">Company Address*</label>
+                                                                    <div class="row">
+                                                                      <div class="col-12 pb-2">
+                                                                        <input type="text" class="form-control bg-transparent" placeholder="Address 1" />
+                                                                      </div>
+                                                                      <div class="col-12 pb-2">
+                                                                        <input type="text" class="form-control bg-transparent" placeholder="Address 2" />
+                                                                      </div>
+                                                                      <div class="col-12 col-sm-6 pb-2">
+                                                                        <input type="text" class="form-control bg-transparent" placeholder="City" />
+                                                                      </div>
+                                                                      <div class="col-6 col-sm-3 pb-2">
+                                                                        <input type="text" class="form-control bg-transparent" placeholder="State" />
+                                                                      </div>
+                                                                      <div class="col-6 col-sm-3 pb-2">
+                                                                        <input type="text" class="form-control bg-transparent" placeholder="Zip Code" />
+                                                                      </div>
+                                                                      <div class="col-12 pb-2">
+                                                                        <select name="" id="" class="form-control">
+                                                                          <option value="">Select Country</option>
+                                                                        </select>
+                                                                      </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-100"></div>
+                                                        <div class="col-12 col-lg-6">
+                                                            <div class="form">
+                                                                <div class="form-group">
+                                                                    <label class="formlets-font-weight-800 formlets-dark">VAT NR*</label>
+                                                                    <input type="text" class="form-control bg-transparent" placeholder="" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                      <a href="#" class="btn btn-primary btn-sm rounded-0 text-uppercase px-5 mr-sm-3 mr-0 float-sm-left"><i class="fas fa-chevron-left pr-2"></i> Prev</a>
+                                                      <a href="#" class="btn btn-primary btn-sm rounded-0 text-uppercase px-5 float-sm-right mt-sm-0 mt-3"> Next <i class="fas fa-chevron-right pl-2"></i></a>
+                                                  </div>
+                                                  <div class="tab-pane fade" id="left2" role="tabpanel" aria-labelledby="left2" aria-expanded="true">
+                                                    <h3 class="py-2">Choose Your Plan</h3>
+                                                      <div class='row pb-4'>
+                                                          <div class="col-12 col-lg-6">
+                                                            <div class="form choosePlan">
+                                                                <div class="form-group">
+                                                                    <label class="formlets-font-weight-800 formlets-dark d-block">Plan</label>
+                                                                    <div class="form-check">
+                                                                      <input class="form-check-input" type="radio" name="formletsPlan" id="plan1" value="1" checked>
+                                                                      <label class="form-check-label" for="plan1">
+                                                                        <h6 class="m-0">Personal</h6>
+                                                                        <span>Free</span>
+                                                                      </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                      <input class="form-check-input" type="radio" name="formletsPlan" id="plan2" value="0">
+                                                                      <label class="form-check-label" for="plan2">
+                                                                        <h6 class="m-0">Small Business</h6>
+                                                                        <span>$18 / month</span>
+                                                                      </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                      <input class="form-check-input" type="radio" name="formletsPlan" id="plan3" value="0">
+                                                                      <label class="form-check-label" for="plan3">
+                                                                        <h6 class="m-0">Professional</h6>
+                                                                        <span>$48 / month</span>
+                                                                      </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                      <input class="form-check-input" type="radio" name="formletsPlan" id="plan4" value="0">
+                                                                      <label class="form-check-label" for="plan4">
+                                                                        <h6 class="m-0">Enterprise</h6>
+                                                                        <span>$160 / month</span>
+                                                                      </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                          </div>
+
+                                                      </div>
+                                                      <a href="#" class="btn btn-primary btn-sm rounded-0 text-uppercase px-5 mr-sm-3 mr-0 float-sm-left"><i class="fas fa-chevron-left pr-2"></i> Prev</a>
+                                                      <a href="#" class="btn btn-primary btn-sm rounded-0 text-uppercase px-5 float-sm-right mt-sm-0 mt-3"> Next <i class="fas fa-chevron-right pl-2"></i></a>
+                                                  </div>
+                                                  <div class="tab-pane fade" id="left3" role="tabpanel" aria-labelledby="left3" aria-expanded="true">
+                                                    <h3 class="py-2">Payment</h3>
+                                                      <div class="row pb-4">
+                                                        <div class="col-12">
+                                                          <img class="pr-3" src="dist/images/visa.png" alt="" height="30">
+                                                          <img class="pr-3" src="dist/images/mastercard.png" alt="" height="30">
+                                                        </div>
+                                                      </div>
+                                                      <div class="row pb-2">
+                                                        <div class="col-12 col-lg-6">
+                                                          <div class="form chooseCC">
+                                                              <div class="form-group">
+                                                                  <label class="formlets-font-weight-800 formlets-dark d-block">Choose Credit Card</label>
+                                                                  <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="formletsCC" id="CC1" value="1" checked>
+                                                                    <label class="form-check-label" for="CC1">
+                                                                      <span class="pr-2">**** **** **** 1234</span>
+                                                                      <img class="" src="dist/images/visa.png" alt="" height="20">
+                                                                    </label>
+                                                                  </div>
+                                                                  <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="formletsCC" id="CC2" value="1">
+                                                                    <label class="form-check-label" for="CC2">
+                                                                      <span class="pr-2">**** **** **** 1234</span>
+                                                                      <img class="" src="dist/images/mastercard.png" alt="" height="20">
+                                                                    </label>
+                                                                  </div>
+                                                                  <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="formletsCC" id="CC3" value="1">
+                                                                    <label class="form-check-label" for="CC3">
+                                                                      <span class="pr-2">Add new Credi Card</span>
+                                                                    </label>
+                                                                  </div>
+
+                                                              </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class='row creditCardDetails pb-4'>
+                                                          <div class="col-12 col-md-6">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark">Cardholder's Name*</label>
+                                                                      <input type="text" class="form-control bg-transparent" placeholder="" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-12 col-md-6">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark">Card Number*</label>
+                                                                      <input type="text" class="form-control bg-transparent" placeholder="" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-12 col-md-6">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark">Expiry Date*</label>
+                                                                      <div class="row">
+                                                                        <div class="col-6">
+                                                                          <input type="text" class="form-control bg-transparent" placeholder="MM" />
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                          <input type="text" class="form-control bg-transparent" placeholder="YYYY" />
+                                                                        </div>
+                                                                      </div>
+
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+
+                                                          <div class="col-6 col-md-3">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark">CVV/CVC*</label>
+                                                                      <input type="text" class="form-control bg-transparent" placeholder="" />
+                                                                      <small class="form-text">3-4 Digits Code</small>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <a href="#" class="btn btn-primary btn-sm rounded-0 text-uppercase px-5 mr-sm-3 mr-0 float-sm-left"><i class="fas fa-chevron-left pr-2"></i> Prev</a>
+                                                      <a href="#" class="btn btn-primary btn-sm rounded-0 text-uppercase px-5 float-sm-right mt-sm-0 mt-3"> Next <i class="fas fa-chevron-right pl-2"></i></a>
+                                                  </div>
+
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- End main-content-->
+
+        <footer>
+          <div class="container-fluid">
+            <div class="row p-3">
+              <div class="logo-copy col-12 order-2 order-sm-2 order-md-2 order-lg-1 col-lg-6 col-xl-6">
+                <div class="footer-logo">
+                  <a href="index.html">
+                    <img src="dist\images\logo-black.svg" alt="">
+                    <span><strong>form</strong>lets</span>
+                  </a>
+                </div>
+                <div class="copy pl-3">
+                  <span>&copy; Copyright 2018. All rights reserved.</span>
+                </div>
+              </div>
+              <div class="social-links col-12 order-1 order-sm-1 order-md-1 order-lg-1 col-md-push-12 col-lg-6 col-xl-6">
+                <div class="links">
+                  <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Privacy</a></li>
+                  </ul>
+                </div>
+                <div class="social">
+                  <ul>
+                    <li><a href=""><i class="ti-facebook"></i></a></li>
+                    <li><a href=""><i class="ti-google"></i></a></li>
+                    <li><a href=""><i class="ti-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- Top To Bottom-->
+       <a href="#" class="scrollup text-center formlets-bg-primary formlets-rounded-circle-50">
+            <h6 class="text-white mb-0"><i class="icofont icofont-long-arrow-up"></i></h6>
+        </a>
+        <!-- End Top To Bottom-->
+
+
+
+        <!-- jQuery -->
+        <script src="dist/js/plugins.min.js"></script>
+        <script src="dist/js/common.js"></script>
+    </body>
+
+<!-- Mirrored from psd2allconversion.com/templates/themeforest/html/formlets/style1/default/table-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Jan 2018 22:02:31 GMT -->
+</html>

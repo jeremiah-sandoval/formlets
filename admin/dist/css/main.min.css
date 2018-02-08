@@ -660,41 +660,6 @@ footer{
   }
 
 
-/*===
-    1. Accordian Css
-    2. Form Css
-    3. Breadcrumb Css
-    4. Counter Css
-    5. Tabs Css
-    7. Timeline Css
-    8. Scroll Css
-    9. Checkbox & Radio Css
-    10. Table Css
-    11. Progress Bar Css
-    12. Dropzone Css
-    13. Date Picker Css
-    14. Google Map
-    15. Form-Wizard Css
-    16. Sweet Alert Css
-    17. Font Style Css
-    18. Font Weight Css
-    19. Font Color Css
-    20. Latter Spacing Css
-    21. Buttons Size Css
-    22. Buttons Color Css
-    23. Border Color Css
-    24. Border Radius Css
-    25. Box Shadow Css
-    26. Pagination Css
-    27. Pagination Css
-    28. Social Icon Css
-    29. From-Wizard Css
-    30. Pagination Css
-    31. Google Map Css
-    32. Icons Css
-    33. Models Css
-    34. Price Table Css
-===*/
 /*======================== Site Logo Css ===============================*/
 .site-logo{
   display: inline-block;
@@ -1346,6 +1311,37 @@ select[multiple], select[size] {
   border-radius: 5px;
   border: #efefef;
 }
+/*========================  Form Wizard Page Css ===============================*/
+.wizard .round-tab i, .wizard2 .round-tab i {
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  border: 2px solid #333;
+  font-size: 1.25rem;
+  line-height: 45px;
+  text-align: center !important;
+  top: 15px;
+  z-index: 99;
+  margin-bottom: 18px !important; }
+
+.wizard .nav-link:hover {
+  color: #333 !important; }
+
+.wizard .nav-link.active i {
+  background-color: #fff;
+  border-color: #42A3B8;
+  color: #42A3B8 !important; }
+
+.wizard .connecting-line {
+  height: 2px;
+  background: #333;
+  position: absolute;
+  width: 90%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 40%;
+  z-index: 1; }
 
 
 /*======================== Media Queries ===============================*/
@@ -1438,5 +1434,8 @@ select[multiple], select[size] {
   .grid-view .form-item ul.form-details li.form-actions a.pub,
   .grid-view .form-item ul.form-details li.form-actions a.unpub{
     display: inline-block;
+  }
+  .wizard .connecting-line {
+    display: none;
   }
 }

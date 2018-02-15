@@ -89,7 +89,7 @@ h5 {
   color: #3fbcef; }
 
 .formlets-blue{
-  color: #0099FF !important; }
+  color: #42A3B8 !important; }
 
 /*======================== Background Color Css ===============================*/
 .formlets-bg-primary {
@@ -985,7 +985,7 @@ select[multiple], select[size] {
   border-bottom: 0px !important; }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: #f6fafb; }
+  background-color: #fafafa; }
 
 .table .form-group{
   display: inline-block;
@@ -1121,11 +1121,11 @@ select[multiple], select[size] {
   margin-top: 2px;
 }
 .list-view li.form-item:nth-child(odd){
- background-color: #EFEFEF;
+ background-color: #FAFAFA;
 }
-.list-view li.form-item:nth-child(even){
+/* .list-view li.form-item:nth-child(even){
   background-color: #FAFAFA;
-}
+} */
 .list-view .form-item ul.form-details li{
   padding: 0 5px;
   line-height: 24px;
@@ -1302,6 +1302,10 @@ select[multiple], select[size] {
   margin: 0 300px;
   padding-bottom: 30px;
 }
+.Responses-Content, .Data-Sources-Content{
+  margin: 0 200px;
+  padding-bottom: 20px;
+}
 #CompanyDetails{
   display: none;
 }
@@ -1355,6 +1359,9 @@ select[multiple], select[size] {
     flex: 0 0 49%;
     max-width: 49%;
   }
+  .Responses-Content, .Data-Sources-Content{
+    margin: 0 100px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -1371,6 +1378,9 @@ select[multiple], select[size] {
   .Account-Content{
     margin: 0 150px;
     padding-bottom: 20px;
+  }
+  .Responses-Content, .Data-Sources-Content{
+    margin: 0 50px;
   }
 }
 
@@ -1421,6 +1431,9 @@ select[multiple], select[size] {
   .Account-Content{
     margin: 0 50px;
   }
+  .Responses-Content, .Data-Sources-Content{
+    margin: 0;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -1452,7 +1465,7 @@ select[multiple], select[size] {
   .wizard .connecting-line {
     display: none;
   }
-  .Account-Content{
+  .Account-Content, .Responses-Content, .Data-Sources-Content{
     margin: 0;
   }
   #myTab a.nav-link{

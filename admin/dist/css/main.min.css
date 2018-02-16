@@ -1302,9 +1302,16 @@ select[multiple], select[size] {
   margin: 0 300px;
   padding-bottom: 30px;
 }
-.Responses-Content, .Data-Sources-Content{
+.Responses-Content, .Data-Sources-Content, .Team-Content{
   margin: 0 200px;
   padding-bottom: 20px;
+}
+.Autoresponders-Content{
+  margin: 0;
+}
+.Autoresponders-Content .left-section{
+  background-color: #fafafa;
+  border-radius: 5px;
 }
 #CompanyDetails{
   display: none;
@@ -1319,38 +1326,17 @@ select[multiple], select[size] {
   border-radius: 5px;
   border: #efefef;
 }
-/*========================  Form Wizard Page Css ===============================*/
-.wizard .round-tab i, .wizard2 .round-tab i {
-  width: 50px;
-  height: 50px;
-  background-color: #333;
-  border: 2px solid #333;
-  font-size: 1.25rem;
-  line-height: 45px;
-  text-align: center !important;
-  top: 15px;
-  z-index: 99;
-  margin-bottom: 18px !important; }
-
-.wizard .nav-link:hover {
-  color: #333 !important; }
-
-.wizard .nav-link.active i {
-  background-color: #fff;
-  border-color: #42A3B8;
-  color: #42A3B8 !important; }
-
-.wizard .connecting-line {
-  height: 2px;
-  background: #333;
-  position: absolute;
-  width: 95%;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 40%;
-  z-index: 1; }
-
+/*========================  Draggble Div Css ===============================*/
+.field{
+  display: inline;
+  float: left;
+  padding: 10px;
+  border: 1px dashed #000;
+  margin-top: 10px;
+  margin-right: 5px;
+  cursor: move;
+  user-drag: element;
+}
 
 /*======================== Media Queries ===============================*/
 @media (max-width: 1439px){
@@ -1359,7 +1345,7 @@ select[multiple], select[size] {
     flex: 0 0 49%;
     max-width: 49%;
   }
-  .Responses-Content, .Data-Sources-Content{
+  .Responses-Content, .Data-Sources-Content, .Team-Content{
     margin: 0 100px;
   }
 }
@@ -1379,7 +1365,7 @@ select[multiple], select[size] {
     margin: 0 150px;
     padding-bottom: 20px;
   }
-  .Responses-Content, .Data-Sources-Content{
+  .Responses-Content, .Data-Sources-Content, .Team-Content{
     margin: 0 50px;
   }
 }
@@ -1431,7 +1417,7 @@ select[multiple], select[size] {
   .Account-Content{
     margin: 0 50px;
   }
-  .Responses-Content, .Data-Sources-Content{
+  .Responses-Content, .Data-Sources-Content, .Team-Content{
     margin: 0;
   }
 }
@@ -1465,7 +1451,7 @@ select[multiple], select[size] {
   .wizard .connecting-line {
     display: none;
   }
-  .Account-Content, .Responses-Content, .Data-Sources-Content{
+  .Account-Content, .Responses-Content, .Data-Sources-Content, .Team-Content{
     margin: 0;
   }
   #myTab a.nav-link{

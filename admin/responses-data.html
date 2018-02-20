@@ -34,13 +34,13 @@
                             <li class="nav-item align-self-center p-2">
                               <a href="index.html" class="nav-link text-white text-uppercase font-weight-bold">Forms</a>
                             </li>
-                            <li class="nav-item align-self-center p-2">
+                            <li class="nav-item align-self-center p-2 active">
                               <a href="responses.html" class="nav-link text-white text-uppercase font-weight-bold">Responses</a>
                             </li>
                             <li class="nav-item align-self-center p-2">
                               <a href="autoresponders.html" class="nav-link text-white text-uppercase font-weight-bold">Autoresponders</a>
                             </li>
-                            <li class="nav-item align-self-center p-2 active">
+                            <li class="nav-item align-self-center p-2">
                               <a href="data-sources.html" class="nav-link text-white text-uppercase font-weight-bold">Data Sources</a>
                             </li>
                             <li class="nav-item align-self-center p-2">
@@ -93,113 +93,161 @@
                           <div class="col-12 col-md-12">
                               <div class="card formlets-border-light formlets-shadow form-tab">
                                   <div class="card-body">
-                                    <div class="row Data-Sources-Content">
+                                    <div class="row Responses-Content">
                                       <div class="col">
+                                        <div class="row">
+                                          <div class="col text-center pb-4">
+                                            <h4 class="d-inline pr-2">Form 1</h4>
+                                            <a href="" class="d-inline btn btn-secondary">Connect DataSource</a>
+                                          </div>
+                                        </div>
                                         <table id="data-table" class="table table-striped" cellspacing="0" width="100%">
+                                          <div class="text-center">
+                                            <div class="dataTables_view">
+                                              <a href="" class="btn btn-outline-secondary">
+                                                <i class="fas fa-download"></i>
+                                                Export CSV
+                                              </a>
+                                            </div>
+                                            <div class="dataTables_view">
+                                                <select name="data-table_view" aria-controls="data-table" class="form-control">
+                                                  <option value="">All Responses</option>
+                                                  <option value="">This Month</option>
+                                                  <option value="">Last Month</option>
+                                                </select>
+                                            </div>
+                                          </div>
+
+
                                             <thead>
                                                 <tr>
-                                                    <th width="55%">Data Source</th>
-                                                    <th width="15%">Status</th>
-                                                    <th width="30%">Action</th>
+                                                    <th width="20%">Actions</th>
+                                                    <th width="20%">Date</th>
+                                                    <th width="60%">Data</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Form 1</td>
-                                                    <td>linked</td>
                                                     <td>
-                                                      <a href="data-sources2.html" class="form-action"><i class="fas fa-edit pr-1"></i>Edit</a>
+                                                      <a href="" class="form-action"><i class="fas fa-edit pr-1"></i>Edit</a>
                                                       <a href="" class="form-action"><i class="fas fa-times-circle pr-1"></i>Delete</a>
+                                                    </td>
+                                                    <td>2018-02-20 08:01</td>
+                                                    <td>
+                                                      <div class="response-data-table">
+                                                        <div class="row">
+                                                          <div class="col-3"><strong>Name:</strong></div>
+                                                          <div class="col-9">Test name</div>
+                                                        </div>
+                                                        <div class="row">
+                                                          <div class="col-3"><strong>Email:</strong></div>
+                                                          <div class="col-9">test@test.com</div>
+                                                        </div>
+                                                        <div class="row">
+                                                          <div class="col-3"><strong>Address:</strong></div>
+                                                          <div class="col-9">Test Address</div>
+                                                        </div>
+                                                      </div>
+
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Form 2</td>
-                                                    <td>linked</td>
                                                     <td>
-                                                      <a href="data-sources2.html" class="form-action"><i class="fas fa-edit pr-1"></i>Edit</a>
+                                                      <a href="" class="form-action"><i class="fas fa-edit pr-1"></i>Edit</a>
                                                       <a href="" class="form-action"><i class="fas fa-times-circle pr-1"></i>Delete</a>
+                                                    </td>
+                                                    <td>2018-02-20 08:01</td>
+                                                    <td>
+                                                      <div class="response-data-table">
+                                                        <div class="row">
+                                                          <div class="col-3"><strong>Name:</strong></div>
+                                                          <div class="col-9">Test name</div>
+                                                        </div>
+                                                        <div class="row">
+                                                          <div class="col-3"><strong>Email:</strong></div>
+                                                          <div class="col-9">test@test.com</div>
+                                                        </div>
+                                                        <div class="row">
+                                                          <div class="col-3"><strong>Address:</strong></div>
+                                                          <div class="col-9">Test Address</div>
+                                                        </div>
+                                                      </div>
+
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Form 3</td>
-                                                    <td>linked</td>
                                                     <td>
-                                                      <a href="data-sources2.html" class="form-action"><i class="fas fa-edit pr-1"></i>Edit</a>
+                                                      <a href="" class="form-action"><i class="fas fa-edit pr-1"></i>Edit</a>
                                                       <a href="" class="form-action"><i class="fas fa-times-circle pr-1"></i>Delete</a>
+                                                    </td>
+                                                    <td>2018-02-20 08:01</td>
+                                                    <td>
+                                                      <div class="response-data-table">
+                                                        <div class="row">
+                                                          <div class="col-3"><strong>Name:</strong></div>
+                                                          <div class="col-9">Test name</div>
+                                                        </div>
+                                                        <div class="row">
+                                                          <div class="col-3"><strong>Email:</strong></div>
+                                                          <div class="col-9">test@test.com</div>
+                                                        </div>
+                                                        <div class="row">
+                                                          <div class="col-3"><strong>Address:</strong></div>
+                                                          <div class="col-9">Test Address</div>
+                                                        </div>
+                                                      </div>
+
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Form 4</td>
-                                                    <td>linked</td>
                                                     <td>
-                                                      <a href="data-sources2.html" class="form-action"><i class="fas fa-edit pr-1"></i>Edit</a>
+                                                      <a href="" class="form-action"><i class="fas fa-edit pr-1"></i>Edit</a>
                                                       <a href="" class="form-action"><i class="fas fa-times-circle pr-1"></i>Delete</a>
+                                                    </td>
+                                                    <td>2018-02-20 08:01</td>
+                                                    <td>
+                                                      <div class="response-data-table">
+                                                        <div class="row">
+                                                          <div class="col-3"><strong>Name:</strong></div>
+                                                          <div class="col-9">Test name</div>
+                                                        </div>
+                                                        <div class="row">
+                                                          <div class="col-3"><strong>Email:</strong></div>
+                                                          <div class="col-9">test@test.com</div>
+                                                        </div>
+                                                        <div class="row">
+                                                          <div class="col-3"><strong>Address:</strong></div>
+                                                          <div class="col-9">Test Address</div>
+                                                        </div>
+                                                      </div>
+
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Form 5</td>
-                                                    <td>linked</td>
                                                     <td>
-                                                      <a href="data-sources2.html" class="form-action"><i class="fas fa-edit pr-1"></i>Edit</a>
+                                                      <a href="" class="form-action"><i class="fas fa-edit pr-1"></i>Edit</a>
                                                       <a href="" class="form-action"><i class="fas fa-times-circle pr-1"></i>Delete</a>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Form 6</td>
-                                                    <td>linked</td>
+                                                    <td>2018-02-20 08:01</td>
                                                     <td>
-                                                      <a href="data-sources2.html" class="form-action"><i class="fas fa-edit pr-1"></i>Edit</a>
-                                                      <a href="" class="form-action"><i class="fas fa-times-circle pr-1"></i>Delete</a>
+                                                      <div class="response-data-table">
+                                                        <div class="row">
+                                                          <div class="col-3"><strong>Name:</strong></div>
+                                                          <div class="col-9">Test name</div>
+                                                        </div>
+                                                        <div class="row">
+                                                          <div class="col-3"><strong>Email:</strong></div>
+                                                          <div class="col-9">test@test.com</div>
+                                                        </div>
+                                                        <div class="row">
+                                                          <div class="col-3"><strong>Address:</strong></div>
+                                                          <div class="col-9">Test Address</div>
+                                                        </div>
+                                                      </div>
+
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Form 7</td>
-                                                    <td>linked</td>
-                                                    <td>
-                                                      <a href="data-sources2.html" class="form-action"><i class="fas fa-edit pr-1"></i>Edit</a>
-                                                      <a href="" class="form-action"><i class="fas fa-times-circle pr-1"></i>Delete</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Form 8</td>
-                                                    <td>linked</td>
-                                                    <td>
-                                                      <a href="data-sources2.html" class="form-action"><i class="fas fa-edit pr-1"></i>Edit</a>
-                                                      <a href="" class="form-action"><i class="fas fa-times-circle pr-1"></i>Delete</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Form 9</td>
-                                                    <td>linked</td>
-                                                    <td>
-                                                      <a href="data-sources2.html" class="form-action"><i class="fas fa-edit pr-1"></i>Edit</a>
-                                                      <a href="" class="form-action"><i class="fas fa-times-circle pr-1"></i>Delete</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Form 10</td>
-                                                    <td>linked</td>
-                                                    <td>
-                                                      <a href="data-sources2.html" class="form-action"><i class="fas fa-edit pr-1"></i>Edit</a>
-                                                      <a href="" class="form-action"><i class="fas fa-times-circle pr-1"></i>Delete</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Form 11</td>
-                                                    <td>linked</td>
-                                                    <td>
-                                                      <a href="data-sources2.html" class="form-action"><i class="fas fa-edit pr-1"></i>Edit</a>
-                                                      <a href="" class="form-action"><i class="fas fa-times-circle pr-1"></i>Delete</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Form 12</td>
-                                                    <td>linked</td>
-                                                    <td>
-                                                      <a href="data-sources2.html" class="form-action"><i class="fas fa-edit pr-1"></i>Edit</a>
-                                                      <a href="" class="form-action"><i class="fas fa-times-circle pr-1"></i>Delete</a>
-                                                    </td>
-                                                </tr>
+
 
                                             </tbody>
                                         </table>

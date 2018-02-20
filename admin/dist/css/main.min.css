@@ -199,6 +199,14 @@ h5 {
   border-color: #18292F;
   color: #18292F; }
 
+.btn-secondary {
+  background-color: #42A3B8;
+  border-color: #42A3B8; }
+
+.btn-outline-secondary {
+  border-color: #42A3B8;
+  color: #42A3B8; }
+
 .btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:focus, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
   background-color: #18292F !important;
   border-color: #18292F !important;
@@ -1337,6 +1345,20 @@ select[multiple], select[size] {
   cursor: move;
   user-drag: element;
 }
+/*============================ Data Table ==================================*/
+.dataTables_view {
+  float: right;
+  padding-left: 10px;
+}
+.response-data-table{
+  width: 100%;
+}
+.response-data-table tr{
+  background-color: none;
+}
+.response-data-table tr td{
+  padding: 5px;
+}
 
 /*======================== Media Queries ===============================*/
 @media (max-width: 1439px){
@@ -1427,7 +1449,14 @@ select[multiple], select[size] {
   .wizard .connecting-line {
     width: 90%;
     }
-
+    .dataTables_view {
+      float: none;
+      display: inline-block;
+    }
+    .dataTables_view select{
+      width: auto;
+      margin: 0 auto;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */

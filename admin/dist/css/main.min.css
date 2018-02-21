@@ -1119,7 +1119,6 @@ select[multiple], select[size] {
   background-color: #18292F;
   padding: 10px;
   margin: 0;
-  border-radius: 5px;
 }
 .list-view ul.listview-header li{
   display: inline-block;
@@ -1204,7 +1203,6 @@ select[multiple], select[size] {
   display: inline-block;
 }
 .search-form, .sort_table .form-control, .length_table .form-control{
-  border-radius: 5px;
   display: inline;
 }
 .sort_table .form-control, .length_table .form-control{

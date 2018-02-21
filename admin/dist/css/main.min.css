@@ -212,6 +212,11 @@ h5 {
   border-color: #18292F !important;
   color: #fff !important; }
 
+.btn-outline-secondary:hover, .btn-outline-secondary:active, .btn-outline-secondary:focus, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
+  background-color: #42A3B8 !important;
+  border-color: #42A3B8 !important;
+  color: #fff !important; }
+
 .btn-success:hover, .btn-success:active, .btn-success:focus, .btn-info:hover, .btn-info:active, .btn-info:focus, .btn-danger:hover, .btn-danger:active, .btn-danger:focus, .btn-warning:hover, .btn-warning:active, .btn-warning:focus, .btn-dark:hover, .btn-dark:active, .btn-dark:focus, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
   color: #fff !important; }
 
@@ -1359,6 +1364,31 @@ select[multiple], select[size] {
 .response-data-table tr td{
   padding: 5px;
 }
+.table-elements thead{
+  background-color: #18292F;
+  color: #fff;
+}
+.table-elements th, .table-elements td{
+  padding: 5px 10px;
+}
+
+/*============================ Data Sources ==================================*/
+.data-list .row{
+  margin: 0px !important;
+}
+.data-list .list-col{
+  float: left;
+  padding: 5px 5px 5px 0;
+}
+.data-list .list-col .deleteList,
+.data-list .list-col .removeColumn{
+  color: #ed1c24;
+}
+.data-list .list-col .movelist,
+.data-list .list-col .deleteList {
+  padding: 5px;
+}
+
 
 /*======================== Media Queries ===============================*/
 @media (max-width: 1439px){

@@ -474,6 +474,32 @@ h1.inner-header{
   padding: 20px 0;
 }
 
+/** FEEDBACK **/
+.feedback-title span{
+  font-size: 14px;
+  font-weight: 300;
+  color: #666666;
+}
+.mui-select:focus > select {
+  height: 33px;
+  margin-bottom: -1px;
+  border-color: #42a3b8;
+  border-width: 2px;
+}
+.mui-select:focus > label,
+.mui-select > select:focus ~ label {
+  color: #42a3b8;
+}
+.mui-textfield > input:focus ~ label,
+.mui-textfield > textarea:focus ~ label {
+  color: #42a3b8;
+}
+.mui-textfield > input:focus,
+.mui-textfield > textarea:focus {
+  border-color: #42a3b8;
+  border-width: 2px;
+}
+
 #Footer-Container:before{
   content: "";
   display: block;

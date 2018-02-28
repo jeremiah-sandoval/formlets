@@ -5050,7 +5050,6 @@ button.close {
 
 @media (min-width:576px) {
   .modal-dialog {
-    max-width: 500px;
     margin: 30px auto
   }
   .modal-sm {
@@ -27635,7 +27634,8 @@ button.note-editor .close {
   margin-right: auto;
   width: auto;
   padding: 10px;
-  z-index: 1050
+  z-index: 1050;
+  max-width: 1280px;
 }
 
 .modal-content {
@@ -27646,7 +27646,8 @@ button.note-editor .close {
   border-radius: 6px;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
-  outline: 0
+  outline: 0;
+  max-height: auto;
 }
 
 .modal-backdrop {
@@ -27715,7 +27716,6 @@ button.note-editor .close {
 
 @media screen and (min-width:768px) {
   .modal-dialog {
-    width: 600px;
     padding-top: 30px;
     padding-bottom: 30px
   }

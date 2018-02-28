@@ -1387,6 +1387,18 @@ select[multiple], select[size] {
   padding: 5px;
 }
 
+/*=========================== Response Table =================================*/
+.response-item{
+  border: 1px solid #efefef;
+  border-radius: 5px;
+}
+.response-item-header{
+  padding: 10px;
+  background-color: #efefef;
+}
+.response-item-details{
+  padding: 10px;
+}
 
 /*======================== Media Queries ===============================*/
 @media (max-width: 1439px){

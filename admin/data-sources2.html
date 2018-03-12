@@ -33,22 +33,22 @@
           <nav class="navbar navbar-links navbar-expand-lg">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item align-self-center p-2">
-                <a href="index.html" class="nav-link text-white text-uppercase font-weight-bold">Forms</a>
+                <a href="index.html" class="nav-link text-white ">Forms</a>
               </li>
               <li class="nav-item align-self-center p-2">
-                <a href="responses.html" class="nav-link text-white text-uppercase font-weight-bold">Responses</a>
+                <a href="responses.html" class="nav-link text-white ">Responses</a>
               </li>
               <li class="nav-item align-self-center p-2">
-                <a href="autoresponders.html" class="nav-link text-white text-uppercase font-weight-bold">Autoresponders</a>
+                <a href="autoresponders.html" class="nav-link text-white ">Autoresponders</a>
               </li>
               <li class="nav-item align-self-center p-2 active">
-                <a href="data-sources.html" class="nav-link text-white text-uppercase font-weight-bold">Data Sources</a>
+                <a href="data-sources.html" class="nav-link text-white ">Data Sources</a>
               </li>
               <li class="nav-item align-self-center p-2">
-                <a href="team.html" class="nav-link text-white text-uppercase font-weight-bold">Team</a>
+                <a href="team.html" class="nav-link text-white ">Team</a>
               </li>
               <li class="nav-item align-self-center p-2">
-                <a href="account.html" class="nav-link text-white text-uppercase font-weight-bold">Account</a>
+                <a href="account.html" class="nav-link text-white ">Account</a>
               </li>
             </ul>
           </nav>
@@ -62,8 +62,8 @@
                   <div class="media">
                     <img src="dist/images/author2.jpg" alt="" class="d-flex mr-3 img-fluid formlets-rounded-circle-50" width="45" />
                     <div class="media-body align-self-center">
-                      <p class="mb-1 text-white text-uppercase font-weight-bold">John Deo</p>
-                      <small class="formlets-primary-light font-weight-bold text-white"> Admin </small>
+                      <p class="mb-1 text-white ">John Deo</p>
+                      <small class="formlets-primary-light text-white"> Admin </small>
                     </div>
                   </div>
                 </a>
@@ -72,7 +72,7 @@
                 <a href="" class="nav-link align-self-center">
                   <div class="logout">
                     <span class="text-white d-inline-block"><i class="fas fa-sign-out-alt"></i></span>
-                    <p class="logout-body mb-0 text-uppercase text-white font-weight-bold d-inline-block">Logout</p>
+                    <p class="logout-body mb-0 text-uppercase text-white d-inline-block">Logout</p>
                   </div>
 
                 </a>
@@ -105,35 +105,45 @@
                           <label>Data Lists</label>
 
                           <div class="row title column-titles">
-                            <div class="list-col listColumns">
-                              <input type="text" name="columns[]" class="input-title form-control" value="Column 1">
+                            <div class="list-col spacing"></div>
+                            <div class="column-values">
+                              <div class="list-col">
+                                <input type="text" name="columns[]" class="input-title form-control" value="Column 1">
+                              </div>
+                              <div class="list-col pb-2">
+                                <input type="text" name="columns[]" class="form-control input-title" value="">
+                                <span class="removeColumn"><i class="fas fa-trash-alt"></i> Delete </span>
+                              </div>
+                              <div class="list-col pl-2">
+                                <a href="javascript:;" class="newColumn formlets-blue">+ new column</a>
+                              </div>
                             </div>
-                            <div class="list-col listColumns">
-                              <input type="text" name="columns[]" class="form-control input-title" value="">
-                              <span class="removeColumn"><i class="fas fa-trash-alt"></i> Delete </span>
-                            </div>
-                            <div class="list-col new-col">
-                              <a href="javascript:;" class="newColumn formlets-blue">+ new column</a>
-                            </div>
+
                           </div>
 
                           <div class="datalists" id="datalists">
                             <div class="row list">
+                              <div class="list-col pr-2">
+                                <i class="fas fa-arrows-alt movelist" aria-hidden="true"></i>
+                                <i class="fas fa-trash-alt deleteList" aria-hidden="true"></i>
+                              </div>
                               <div class="column-values">
+
                                 <div class="list-col">
                                   <input type="text" name="labels[]" value="" class="form-control">
                                 </div>
                                 <div class="list-col">
                                   <input type="text" name="values[]" value="" class="form-control">
                                 </div>
-                              </div>
-                              <div class="list-col">
-                                <i class="fas fa-arrows-alt movelist" aria-hidden="true"></i>
-                                <i class="fas fa-trash-alt deleteList" aria-hidden="true"></i>
                               </div>
                             </div>
                             <div class="row list">
+                              <div class="list-col pr-2">
+                                <i class="fas fa-arrows-alt movelist" aria-hidden="true"></i>
+                                <i class="fas fa-trash-alt deleteList" aria-hidden="true"></i>
+                              </div>
                               <div class="column-values">
+
                                 <div class="list-col">
                                   <input type="text" name="labels[]" value="" class="form-control">
                                 </div>
@@ -141,12 +151,83 @@
                                   <input type="text" name="values[]" value="" class="form-control">
                                 </div>
                               </div>
-                              <div class="list-col">
+                            </div>
+                            <div class="row list">
+                              <div class="list-col pr-2">
                                 <i class="fas fa-arrows-alt movelist" aria-hidden="true"></i>
                                 <i class="fas fa-trash-alt deleteList" aria-hidden="true"></i>
                               </div>
+                              <div class="column-values">
+
+                                <div class="list-col">
+                                  <input type="text" name="labels[]" value="" class="form-control">
+                                </div>
+                                <div class="list-col">
+                                  <input type="text" name="values[]" value="" class="form-control">
+                                </div>
+                              </div>
                             </div>
-                            <div class="row" id="new">
+                            <div class="row list">
+                              <div class="list-col pr-2">
+                                <i class="fas fa-arrows-alt movelist" aria-hidden="true"></i>
+                                <i class="fas fa-trash-alt deleteList" aria-hidden="true"></i>
+                              </div>
+                              <div class="column-values">
+
+                                <div class="list-col">
+                                  <input type="text" name="labels[]" value="" class="form-control">
+                                </div>
+                                <div class="list-col">
+                                  <input type="text" name="values[]" value="" class="form-control">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row list">
+                              <div class="list-col pr-2">
+                                <i class="fas fa-arrows-alt movelist" aria-hidden="true"></i>
+                                <i class="fas fa-trash-alt deleteList" aria-hidden="true"></i>
+                              </div>
+                              <div class="column-values">
+
+                                <div class="list-col">
+                                  <input type="text" name="labels[]" value="" class="form-control">
+                                </div>
+                                <div class="list-col">
+                                  <input type="text" name="values[]" value="" class="form-control">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row list">
+                              <div class="list-col pr-2">
+                                <i class="fas fa-arrows-alt movelist" aria-hidden="true"></i>
+                                <i class="fas fa-trash-alt deleteList" aria-hidden="true"></i>
+                              </div>
+                              <div class="column-values">
+
+                                <div class="list-col">
+                                  <input type="text" name="labels[]" value="" class="form-control">
+                                </div>
+                                <div class="list-col">
+                                  <input type="text" name="values[]" value="" class="form-control">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row list">
+                              <div class="list-col pr-2">
+                                <i class="fas fa-arrows-alt movelist" aria-hidden="true"></i>
+                                <i class="fas fa-trash-alt deleteList" aria-hidden="true"></i>
+                              </div>
+                              <div class="column-values">
+
+                                <div class="list-col">
+                                  <input type="text" name="labels[]" value="" class="form-control">
+                                </div>
+                                <div class="list-col">
+                                  <input type="text" name="values[]" value="" class="form-control">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row pt-2" id="new">
                               <div class="col-12">
                                 <a href="javascript:;" id="newList" class="formlets-blue">+ new row</a>
                               </div>
@@ -155,7 +236,7 @@
                         </div>
                         <div class="form-group">
                           <label for="" class="formlets-font-weight-600">Used in the following form elements</label>
-                          <table class="table-elements table-striped" width="100%">
+                          <table class="data-sources-table table-elements table-striped" width="100%">
                             <thead>
                               <tr>
                                 <th>Form</th>

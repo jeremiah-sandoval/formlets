@@ -911,10 +911,16 @@ select[multiple], select[size] {
   padding: 15px; }
 
 /*======================== Checkbox & Radio Css ===============================*/
-[type=radio] + label, [type=checkbox] + label {
+[type=radio] + label {
   position: relative;
   padding-left: 25px;
   cursor: pointer; }
+
+[type=checkbox] + label{
+  position: relative;
+  cursor: pointer;
+  padding-left: 0px;
+}
 
 [type=radio], [type=checkbox] {
   position: absolute;
@@ -922,15 +928,11 @@ select[multiple], select[size] {
   visibility: hidden; }
 
 [type=checkbox] + label:before {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: 0;
-  width: 17px;
-  height: 17px;
-  z-index: 0;
-  border: 1.5px solid #e6e6e6;
-  transition: .2s; }
+  font-family: Font Awesome\ 5 Free;
+  font-size: 20px;
+  content: "\f0c8";
+  color: #e6e6e6;
+  padding-right: 5px; }
 [type=radio] + label:before {
   content: '';
   position: absolute;
@@ -944,14 +946,11 @@ select[multiple], select[size] {
   transition: .2s; }
 
 [type=checkbox]:checked + label:before {
-  top: 3px;
-  left: 0;
-  width: 10px;
-  height: 17px;
-  border-width: 2px;
-  border-color: transparent #18292F #18292F transparent;
-  -webkit-transform: rotate(40deg);
-  transform-origin: 100% 100%; }
+  font-family: Font Awesome\ 5 Free;
+  font-size: 20px;
+  content: "\f14a";
+  color: #18292F;
+  padding-right: 5px; } 
 [type=radio]:checked + label:before {
   width: 17px;
   height: 17px;
@@ -1122,6 +1121,7 @@ select[multiple], select[size] {
   background-color: #18292F;
   padding: 10px;
   margin: 0;
+  border-radius: 5px;
 }
 .list-view ul.listview-header li{
   display: inline-block;
@@ -1374,12 +1374,18 @@ select[multiple], select[size] {
 }
 
 /*============================ Data Sources ==================================*/
+.data-list .column-titles .spacing{
+  width: 55px;
+}
 .data-list .row{
   margin: 0px !important;
 }
+.data-list .column-values{
+  display: inline-block;
+}
 .data-list .list-col{
   float: left;
-  padding: 5px 5px 5px 0;
+  margin: -1px -1px -1px 0;
 }
 .data-list .list-col .deleteList,
 .data-list .list-col .removeColumn{
@@ -1388,6 +1394,12 @@ select[multiple], select[size] {
 .data-list .list-col .movelist,
 .data-list .list-col .deleteList {
   padding: 5px;
+}
+.data-sources-table thead th:nth-child(1) {
+    border-radius: 5px 0 0 5px;
+}
+.data-sources-table thead th:nth-last-child(1) {
+    border-radius: 0 5px 5px 0;
 }
 
 /*=========================== Response Table =================================*/

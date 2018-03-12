@@ -950,7 +950,7 @@ select[multiple], select[size] {
   font-size: 20px;
   content: "\f14a";
   color: #18292F;
-  padding-right: 5px; } 
+  padding-right: 5px; }
 [type=radio]:checked + label:before {
   width: 17px;
   height: 17px;
@@ -1311,6 +1311,16 @@ select[multiple], select[size] {
   color: #fff;
 }
 
+/*============================ Team ====================================*/
+.Team-Content .table-detailed tr{
+  background-color: transparent !important;
+}
+.Team-Content .table-detailed thead{
+  background-color: #ffffff !important;
+}
+.Team-Content .table-detailed th{
+  color: #18292F !important;
+}
 /*=========================== Account ==================================*/
 .Account-Content{
   margin: 0 300px;

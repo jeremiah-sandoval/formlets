@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>formlets</title>
+        <link rel="icon" href="dist/images/formlets-icon.png" />
+        <link rel="icon" type="image/png" href="https://formlets.com/static/img/favicon.ico" />
+        <!--Plugin CSS-->
+        <link href="dist/css/plugins.min.css" rel="stylesheet">
+		<link href="dist/css/wickedpicker.css" rel="stylesheet">
+		<link href="dist/css/datepicker.css" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		
+        <!--main Css-->
+        <link href="dist/css/main.min.css" rel="stylesheet">
+
+		<!--timepicker js-->
+		<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script src="dist/js/wickedpicker.js"></script>
+</head>
+    <body>
+        <!-- header-->
+        <div id="header-fix" class="header fixed-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-10 col-xl-9 align-self-center">
+                        <div class="site-logo">
+                            <a href="index.html">
+                              <img src="dist/images/logo-black.svg" alt="" class="img-fluid" />
+                              <span>
+                                <b>form</b>lets
+                              </span>
+                            </a>
+                        </div>
+                        <div id="mobile-menu" class="mobile-menu"><a href="#"><i class="fas fa-bars"></i></a></div>
+                        <nav class="navbar navbar-links navbar-expand-lg">
+                          <ul class="navbar-nav ml-auto">
+                            <li class="nav-item align-self-center p-2">
+                              <a href="index.html" class="nav-link text-white ">Forms</a>
+                            </li>
+                            <li class="nav-item align-self-center p-2">
+                              <a href="responses.html" class="nav-link text-white ">Responses</a>
+                            </li>
+                            <li class="nav-item align-self-center p-2">
+                              <a href="" class="nav-link text-white ">Autoresponders</a>
+                            </li>
+                            <li class="nav-item align-self-center p-2">
+                              <a href="data-sources.html" class="nav-link text-white ">Data Sources</a>
+                            </li>
+                            <li class="nav-item align-self-center p-2">
+                              <a href="team.html" class="nav-link text-white ">Team</a>
+                            </li>
+                            <li class="nav-item align-self-center p-2 active">
+                              <a href="account.html" class="nav-link text-white ">Account</a>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-lg-2 col-xl-3 d-none d-lg-inline-block my-auto">
+                        <nav class="navbar navbar-expand-lg p-0">
+                            <ul class="navbar-nav notification ml-auto d-inline-flex">
+
+                                <li class="nav-item dropdown user-profile">
+                                    <a class="nav-link pl-3 pr-3" data-toggle="dropdown" aria-expanded="false">
+                                        <div class="media">
+                                            <img src="dist/images/author2.jpg" alt="" class="d-flex mr-3 img-fluid formlets-rounded-circle-50" width="45" />
+                                            <div class="media-body align-self-center">
+                                                <p class="mb-1 text-white ">John Deo</p>
+                                                <small class="formlets-primary-light text-white"> Admin </small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item align-self-center p-2">
+                                  <a href="" class="nav-link align-self-center">
+                                    <div class="logout">
+                                      <span class="text-white d-inline-block"><i class="fas fa-sign-out-alt"></i></span>
+                                      <p class="logout-body mb-0 text-uppercase text-white d-inline-block">Logout</p>
+                                    </div>
+
+                                  </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End header-->
+
+        <!-- main-content-->
+        <div class="wrapper mt-80">
+            <div id="content">
+                <div class="row pt-4">
+                    <div class="col-12 col-sm-12">
+                      <div class="row mb-4">
+                          <div class="col-12 col-md-12">
+                              <div class="card formlets-border-light formlets-shadow form-tab">
+                                  <div class="card-body">
+                                      <div class="row Account-Content">
+                                          <div class="col-12">
+                                              <div class="tab-content" id="myTabContent">
+                                                  <div>
+                                                    <h3 class="py-2">Form 2</h3>
+                                                      <div class='row pb-4'>
+                                                          <div class="colName">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <input type="text" class="form-control1 bg-transparent" placeholder="First Name*" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="colName">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <input type="text" class="form-control1 bg-transparent" placeholder="Last Name*" />
+                                                                      
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-12">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <input type="email" class="form-control1 bg-transparent" placeholder="Email*" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="colName">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <input type="text" class="form-control1 bg-transparent" placeholder="Phone" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="colName">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <input type="text" class="form-control1 bg-transparent" placeholder="Number" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-12">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <input type="text" class="form-control1 bg-transparent" placeholder="Address 1" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+														  <div class="col-12">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <input type="text" class="form-control1 bg-transparent" placeholder="Address 2" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+														  <div class="colAddress">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <input type="text" class="form-control1 bg-transparent" placeholder="City" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+														  <div class="colAddress">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <input type="text" class="form-control1 bg-transparent" placeholder="State" />
+                                                                  </div>
+                                                              </div>
+                                                          </div><div class="colAddress">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <input type="text" class="form-control1 bg-transparent" placeholder="Zip Code" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+														  <div class="col-12">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <input type="text" class="form-control1 bg-transparent" placeholder="Country" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+														  <div class="col-12">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <input type="text" class="form-control1 bg-transparent" placeholder="Text Input Short" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+														  <div class="col-12">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <textarea class="form-control1 text-area bg-transparent" placeholder="Text Input Long"></textarea>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+														<div class="col-12">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark d-block">Single Choice</label>
+                                                                      <div>
+                                                                        <input class="form-check-input" type="radio" name="singlechoice" id="option1" value="1" checked>
+                                                                        <label class="form-check-label" for="option1">
+                                                                          Option 1
+                                                                        </label>
+                                                                      </div>
+                                                                      <div>
+                                                                        <input class="form-check-input" type="radio" name="singlechoice" id="option0" value="0">
+                                                                        <label class="form-check-label" for="option0">
+                                                                          Option 2
+                                                                        </label>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>	
+														  <div class="col-12">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark d-block">Multiple Choice</label>
+																	<div>
+																		<input type="checkbox" id="check1" value="" checked>
+																		<label class="form-check-label" for="check1">Option one</label>
+																	</div>
+																	<div>
+																		<input type="checkbox" id="check0" value="">
+																		<label class="form-check-label" for="check0">Option Two</label>
+																	</div>	
+                                                                  </div>
+                                                              </div>
+                                                          </div>	
+                                                          <div class="col-12">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark">Range</label>
+																		<div class="slidecontainer">
+																			<input type="range" min="0" max="100" value="50" class="slider" id="range">
+																			<p align="center" style="margin-top:-5px;"><span id="value"></span></p>
+																		</div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-12" style="margin-top:-10px;">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark d-block">Time</label>
+																	  <input type="text" id="timepicker" name="timepicker" class="form-control1 bg-transparent timepicker">
+																	  <script type="text/javascript">
+																		$('.timepicker').wickedpicker();
+																	  </script>	
+                                                                  </div>
+                                                              </div>
+                                                          </div>														  
+                                                          <div class="col-12">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark">Date and Time</label>
+                                                                      <input type="text" class="form-control1 bg-transparent datepicker" id="datepicker" placeholder="Date and Time" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-12">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark">Signature</label>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-12" style="margin-top:-15px;">
+                                                              <div class="form">
+                                                                  <div class="form-group" align="center">
+																  <div id="signature"></div>
+																  <input id="sigbutton" type="button" value="Clear"/>																  
+                                                                  </div>
+                                                              </div>
+                                                          </div>                                                             
+                                                          <div class="col-12" style="margin-top:-10px;">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <label class="formlets-font-weight-800 formlets-dark">Star Rating</label>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+														  <div class="col-12" style="margin-top:-10px;">
+                                                              <div class="form">
+                                                                  <div class="form-group">
+                                                                      <div class="rating">
+																		<input type="radio" name="star" id="star1">
+                                                                        <label for="star1"></label>
+																		<input type="radio" name="star" id="star2">
+                                                                        <label for="star2"></label>
+																		<input type="radio" name="star" id="star3">
+                                                                        <label for="star3"></label>
+																		<input type="radio" name="star" id="star4">
+                                                                        <label for="star4"></label>
+																		<input type="radio" name="star" id="star5">
+                                                                        <label for="star5"></label>
+																      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+
+
+                                                      <div class="row pb-4" id="CompanyDetails">
+                                                        <h5 class="pl-2">Company Details</h5>
+                                                        <div class="col-12">
+                                                            <div class="form">
+                                                                <div class="form-group">
+                                                                    <label class="formlets-font-weight-800 formlets-dark">Company Name*</label>
+                                                                    <input type="text" class="form-control1 bg-transparent" placeholder="" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-100"></div>
+                                                        <div class="col-12">
+                                                            <div class="form">
+                                                                <div class="form-group">
+                                                                    <label class="formlets-font-weight-800 formlets-dark">Company Address*</label>
+                                                                    <div class="row">
+                                                                      <div class="col-12 pb-2">
+                                                                        <input type="text" class="form-control1 bg-transparent" placeholder="Address 1" />
+                                                                      </div>
+                                                                      <div class="col-12 pb-2">
+                                                                        <input type="text" class="form-control1 bg-transparent" placeholder="Address 2" />
+                                                                      </div>
+                                                                      <div class="col-12 col-sm-6 pb-2">
+                                                                        <input type="text" class="form-control1 bg-transparent" placeholder="City" />
+                                                                      </div>
+                                                                      <div class="col-6 col-sm-3 pb-2">
+                                                                        <input type="text" class="form-control1 bg-transparent" placeholder="State" />
+                                                                      </div>
+                                                                      <div class="col-6 col-sm-3 pb-2">
+                                                                        <input type="text" class="form-control1 bg-transparent" placeholder="Zip Code" />
+                                                                      </div>
+                                                                      <div class="col-12 pb-2">
+                                                                        <select name="" id="" class="form-control1">
+                                                                          <option value="">Select Country</option>
+                                                                        </select>
+                                                                      </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-100"></div>
+                                                        <div class="col-12">
+                                                            <div class="form">
+                                                                <div class="form-group">
+                                                                    <label class="formlets-font-weight-800 formlets-dark">VAT NR*</label>
+                                                                    <input type="text" class="form-control1 bg-transparent" placeholder="" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                      <a href="selectplan.html" class="btn btn-primary btn-sm rounded-0 text-uppercase px-5 float-sm-right mt-sm-0 mt-3"> Submit </a>
+                                                  </div>
+
+
+
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- End main-content-->
+
+        <footer>
+          <div class="container-fluid">
+            <div class="row p-3">
+              <div class="logo-copy col-12 order-2 order-sm-2 order-md-2 order-lg-1 col-lg-6 col-xl-6">
+                <div class="footer-logo">
+                  <a href="index.html">
+                    <img src="dist\images\logo-black.svg" alt="">
+                    <span><strong>form</strong>lets</span>
+                  </a>
+                </div>
+                <div class="copy pl-3">
+                  <span>&copy; Copyright 2018. All rights reserved.</span>
+                </div>
+              </div>
+              <div class="social-links col-12 order-1 order-sm-1 order-md-1 order-lg-1 col-md-push-12 col-lg-6 col-xl-6">
+                <div class="links">
+                  <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Privacy</a></li>
+                  </ul>
+                </div>
+                <div class="social">
+                  <ul>
+                    <li><a href=""><i class="ti-facebook"></i></a></li>
+                    <li><a href=""><i class="ti-google"></i></a></li>
+                    <li><a href=""><i class="ti-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- Top To Bottom-->
+       <a href="#" class="scrollup text-center formlets-bg-primary formlets-rounded-circle-50">
+            <h6 class="text-white mb-0"><i class="icofont icofont-long-arrow-up"></i></h6>
+        </a>
+        <!-- End Top To Bottom-->
+
+        <!-- jQuery -->
+        <script src="dist/js/plugins.min.js"></script>
+        <script src="dist/js/common.js"></script>
+		<!-- jQuery Signature Field-->
+		<script src="dist/js/signature.js"></script>
+    </body>
+</html>

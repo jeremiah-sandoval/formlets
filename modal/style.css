@@ -1,6 +1,13 @@
 /*************** MODAL STYLES ***************/
+.modal{
+  padding: 0px !important;
+}
 .modal-dialog{
   max-width: 100%;
+}
+.modal-content{
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 .modal-logo{
   background: #5C2D91;
@@ -15,6 +22,7 @@
 .modal-col-item{
   background-color: #efefef;
   border-radius: 15px;
+  padding: 1.5rem;
 }
 .modal-option{
   cursor: pointer;
@@ -239,17 +247,55 @@
 
 @media (min-width: 576px){
   .modal-dialog{
-    max-width: 540px;}
+    max-width: 540px;
+  }
+  .prodImg{
+    width: auto;
+  }
+  .modal-content{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 @media (min-width: 768px){
   .modal-dialog{
-    max-width: 720px;}
+    max-width: 720px;
+  }
+  .prodImg{
+    width: auto;
+  }
+  .modal-content{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 @media (min-width: 992px){
   .modal-dialog{
-    max-width: 960px;}
+    max-width: 960px;
+  }
+  .prodImg{
+    width: 100%;
+  }
+  .modal-content{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .modal-col-item{
+    padding: 3rem;
+  }
 }
 @media (min-width: 1200px){
   .modal-dialog{
-    max-width: 1140px;}
+    max-width: 1140px;
+  }
+  .prodImg{
+    width: 100%;
+  }
+  .modal-content{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .modal-col-item{
+    padding: 3rem;
+  }
 }

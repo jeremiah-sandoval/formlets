@@ -44,6 +44,12 @@ ul, li, ol{
 .btn-secondary:hover{
   background-color: #d2120c;
 }
+.btn-dark{
+
+}
+.btn-dark:hover{
+
+}
 
 /*======================== HEADER CSS ===============================*/
 

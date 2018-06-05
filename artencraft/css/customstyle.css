@@ -4,12 +4,45 @@ body{
   padding: 0;
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
+}
+a{
+  color: #000;
+}
+a:hover{
+  color: #d2120c;
 }
 ul, li, ol{
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.text-white{
+  color: #fff;
+}
+.text-red{
+  color: #d2120c;
+}
+.text-green{
+  color: #289537;
+}
+
+.bg-grey{
+  background-color: #f2f2f2;
+}
+
+.btn-primary{
+  background-color: #289537;
+}
+.btn-primary:hover{
+  background-color: #1d6d28;
+}
+.btn-secondary{
+  background-color: #d2120c;
+}
+.btn-secondary:hover{
+  background-color: #d2120c;
 }
 
 /*======================== HEADER CSS ===============================*/
@@ -95,12 +128,16 @@ header div.middle {
   background: #000;
   color: #fff;
   z-index: 999;
+  padding: 10px 0;
 }
 header div.bottom{
   background: #f2f2f2;
   padding: 10px 0;
   position: relative;
-  z-index: 2;
+  z-index: 0;
+}
+header div.bottom a{
+  color: #000;
 }
 header .top-nav>ul>li{
   border-left: 1px solid #404040;
@@ -110,6 +147,9 @@ header .top-nav>ul>li{
 }
 header .top-nav>ul>li:first-child{
   border: 0;
+}
+header .top-nav>ul>li>a{
+  color: #fff;
 }
 
 .mini-cart{
@@ -200,13 +240,15 @@ div.breadcrumb ul li{
   display: inline-block;
   padding-right: 10px;
 }
-div.breadcrumb ul li:before{
-  content: "\f054";
+div.breadcrumb ul li i{
   padding-right: 10px;
 }
 div.breadcrumb ul li:first-child:before{
-  content: "";
   padding: 0;
+}
+div.breadcrumb ul li a{
+  color: #000;
+  font-size: 16px;
 }
 
 /*======================== PRODUCTS CSS ===============================*/
@@ -315,6 +357,11 @@ div.usp-small ul.usp-small-overview{
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
+}
+
+div.price-block{
+  padding: 20px;
+  background-color: #f2f2f2;
 }
 
 .swogo-invisible{

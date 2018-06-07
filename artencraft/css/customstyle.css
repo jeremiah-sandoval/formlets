@@ -269,6 +269,29 @@ header .top-nav>ul>li>a{
   display: none;
 }
 
+.nav-dropdown{
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: -webkit-gradient(linear,left top,left bottom,from(white),to(#e5e5e5));
+  background: -moz-linear-gradient(top,#fff,#e5e5e5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#e5e5e5');
+  border: 1px solid #ccc;
+  color: #2c2c2c;
+  display: block;
+  font: 600 1.1em/43px "Source Sans Pro",Arial,Helvetica,Sans-serif;
+  padding: 0 15px;
+  position: relative;
+  text-decoration: none;
+  z-index: 5;
+}
+.submenu{
+  position: absolute;
+}
+
 div.usp-header a img {
   display: inline-block;
   vertical-align: middle;
@@ -278,6 +301,7 @@ div.usp-header a span {
   display: inline-block;
   padding-left: 10px;
   vertical-align: middle;
+  width: 85%;
 }
 div.usp-header .col{
   padding: 0 !important;

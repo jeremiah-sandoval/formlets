@@ -735,3 +735,46 @@ h1.inner-header{
   }
 
 }
+
+.timetable .overlay{
+  background-image: -moz-linear-gradient(-29deg,#2DA5E8 0,#2892D7 100%);
+  background-image: -webkit-linear-gradient(-29deg,#2DA5E8 0,#2892D7 100%);
+  background-image: -ms-linear-gradient(-29deg,#2DA5E8 0,#2892D7 100%);
+}
+.timetable header{
+  background-color: #1D70A2;
+}
+.timetable .navbar-light .navbar-brand,
+.timetable .navbar-light .navbar-nav .active>.nav-link,
+.timetable .navbar-light .navbar-nav .nav-link.active,
+.timetable .navbar-light .navbar-nav .nav-link.show,
+.timetable .navbar-light .navbar-nav .show>.nav-link,
+.timetable .navbar-light .navbar-nav .nav-link,
+.timetable .btn-outline-dark,
+.timetable .hero-content{
+  color: #ffffff;
+}
+.timetable .btn-outline-dark{
+  border-color: #ffffff;
+}
+.timetable .trusted-title span{
+  background: #2892D7 none repeat scroll 0 0;
+}
+.timetable .parallax-text h3, .timetable .parallax-text span, .timetable .parallax .cta-container span{
+  color: #333;
+  display: block;
+  text-align: center;
+}
+.timetable .parallax-text h3 a{
+  color: #2892D7 !important;
+  text-decoration: none;
+}
+.timetable .parallax-text h3 a:hover{
+  color: #1D70A2 !important;
+}
+.timetable #Footer-Container:before{
+  border-top: 5px #2892D7 solid;
+}
+.timetable #Footer-Container .social ul li a:hover{
+  background-color: #2892D7;
+}

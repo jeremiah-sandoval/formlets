@@ -8,7 +8,7 @@
 #sticky-header nav#primary-menu{
   display: inline-block;
 }
-.header-search input[type="text"]{
+.header-search .search-form input[type="text"]{
   border: 1px solid #ccc;
   border-right: 0;
   height: 45px;

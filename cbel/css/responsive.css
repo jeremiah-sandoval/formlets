@@ -1266,10 +1266,13 @@ hr {
 .header-search{
   position: absolute;
   top: 50px;
-  margin-left: 10px;
+  left: 0;
 }
 .mobile-menu-area{
   margin-top: 50px;
+}
+.pt-xs-70{
+  padding-top: 70px;
 }
 }
 

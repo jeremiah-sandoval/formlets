@@ -1784,12 +1784,12 @@ text-align: center;
 	font-size: 14px;
 }
 
-.hero-home h1, .home-2 h1 {
-	font-size: 34px;
-}
-
 .hero-home h1 {
 	font-size: 48px;
+	font-weight: 700;
+	color: #FFFFFF;
+	line-height: 1.2;
+	letter-spacing: -1px;
 }
 
 .home-3 h4 {

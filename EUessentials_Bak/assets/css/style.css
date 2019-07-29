@@ -772,7 +772,7 @@ body {
 ---------------------------------------------------*/
 
 .section-r {
-	padding: 100px 0 50px 0;
+	padding: 50px 0 50px 0;
 }
 
 .review-pitch {
@@ -828,13 +828,13 @@ body {
 
 .review-section {
 	padding: 0 0 0 0;
-	box-shadow: 0px 5px 50px 0px rgba(0,0,0,.1);
+	/* box-shadow: 0px 5px 50px 0px rgba(0,0,0,.1); */
 	margin-bottom: 50px;
 	border-radius: 10px;
 }
 
 .review-section .review-text {
-	max-width: 75%;
+	max-width: 85%;
 	margin: 0 auto;
 }
 
@@ -863,13 +863,13 @@ body {
 
 .review-single {
 	text-align: center;
-	padding: 75px 0 75px 0;
+	padding: 30px 0 30px 0;
 }
 
 .review-single img {
-	width: 80px !important;
-	margin: 0 auto;
-	margin-bottom: 20px;
+	width: 120px !important;
+	margin: 0 auto 20px;
+	padding: 0 !important;
 }
 
 .review-text .ion {
@@ -879,8 +879,36 @@ body {
   color: #ff8000;
 }
 
+.reviews .owl-stage{
+	display: flex;
+}
+.reviews .owl-stage .owl-item{
+	margin: auto;
+}
+.owl-stage .owl-item img{
+	padding: 0 30px;
+}
+
 .owl-theme .owl-dots {
-    display: none !important;
+  display: none !important;
+}
+.owl-nav{
+	position: absolute;
+	top: 45%;
+	width: 100%;
+}
+.owl-nav .owl-prev{
+	position: absolute;
+	left: 0;
+}
+.owl-nav .owl-next{
+	position: absolute;
+	right: 0;
+}
+.owl-nav .owl-prev span, .owl-nav .owl-next span{
+	font-size: 36px;
+	font-weight: 700;
+	color: #627382;
 }
 
 /*----------------------------------------------------------

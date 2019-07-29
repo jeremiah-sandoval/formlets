@@ -61,6 +61,7 @@ jQuery(function($) {
        autoplayTimeout:2000,
        autoplayHoverPause:true,
        pagination: false,
+       nav: true,
       });
 
 

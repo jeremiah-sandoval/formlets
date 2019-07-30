@@ -948,7 +948,7 @@ li.at-rss a { background:#ff6600; }
 	width: 100%;
 	float: left;
 	margin: 0;
-	background: url('images/parallaxbg/parallaxbg-02.jpg') no-repeat 50% 50%;
+	background: url('../images/slider/jobconnect-bg.jpg') no-repeat 50% 50%;
 }
 .at-innerbanner.at-innerbannervtwo{
 	color: #767676;
@@ -2798,3 +2798,7 @@ li.at-rss a { background:#ff6600; }
 }
 .at-teamslidercounter span{float: left;}
 .at-teamslidercounter span + span{float: right;}
+
+.logos img{
+	margin: auto;
+}

@@ -2827,3 +2827,9 @@ li.at-rss a { background:#ff6600; }
     -ms-transform: rotate(-180deg);
     transform: rotate(-180deg);
 }
+.job-summary{
+	padding: 30px;
+}
+.job-summary p{
+	margin-bottom: 5px;
+}

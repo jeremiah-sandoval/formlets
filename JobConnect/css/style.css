@@ -1072,7 +1072,7 @@ li.at-rss a { background:#ff6600; }
 .at-navigation > ul > li > a{padding: 0 15px 27px;}
 .at-navigation > ul > li > a:before{
 	left: 0;
-	bottom: 0.at-navigation ul li a
+	bottom: 0;
 	width: 0;
 	height: 5px;
 	content: '';

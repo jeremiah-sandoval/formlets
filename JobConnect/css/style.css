@@ -1013,8 +1013,11 @@ li.at-rss a { background:#ff6600; }
 }
 .at-logo a{
 	display: block;
-	font-size: 36px;
+	font-size: 24px;
 	color: #fff;
+}
+.at-headerbgwhite .at-logo a{
+	color: #333 !important;
 }
 .at-logo a img{display: block;}
 .at-homeone .at-navigationarea{
@@ -1063,10 +1066,13 @@ li.at-rss a { background:#ff6600; }
 	position: relative;
 	padding: 10px 25px;
 }
+.at-headerbgwhite .at-navigation ul li a{
+	color: #333;
+}
 .at-navigation > ul > li > a{padding: 0 15px 27px;}
 .at-navigation > ul > li > a:before{
 	left: 0;
-	bottom: 0;
+	bottom: 0.at-navigation ul li a
 	width: 0;
 	height: 5px;
 	content: '';
@@ -1127,6 +1133,11 @@ li.at-rss a { background:#ff6600; }
 	display: inline-block;
 	vertical-align: middle;
 }
+.at-headerbgwhite .at-contactnumber i,
+.at-headerbgwhite .at-contactnumber em{
+	color: #333;
+}
+
 .at-contactnumber em{
 	font-size: 16px;
 	line-height: 20px;

@@ -2015,17 +2015,6 @@ li.at-rss a { background:#ff6600; }
 	padding: 0;
 	position: relative;
 }
-.at-content .at-aboutus .at-sidebar{
-	width: 33.33%;
-	float: right;
-	padding: 0 15px;
-	overflow: hidden;
-}
-.at-aboutuscontent{
-	float: left;
-	width: 66.66%;
-	padding: 0 15px;
-}
 .at-aboutusslider{
 	width: 100%;
 	float: left;
@@ -2832,4 +2821,9 @@ li.at-rss a { background:#ff6600; }
 }
 .job-summary p{
 	margin-bottom: 5px;
+}
+@media(max-width:991px){
+	.at-content .at-aboutus .at-sidebar{
+		display: none !important;
+	}
 }

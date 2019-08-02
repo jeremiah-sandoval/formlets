@@ -34,8 +34,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto navbar-right">
                   <li class="nav-item"><a class="nav-link" href="affiliates.html">Affiliates</a></li>
-                  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pricing">Register</a></li>
-                  <li class="nav-item"><a class="nav-link btn btn-primary btn-header" href="#">Login</a></li>
+                  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="register.html">Register</a></li>
+                  <li class="nav-item"><a class="nav-link btn btn-primary btn-header" href="login.html">Login</a></li>
                 </ul>
             </div>
           </div>
@@ -51,24 +51,25 @@
           <div class="container">
             <div class="row">
               <div class="col-md-6 offset-md-3">
-                <div class="login contact-form">
+                <div class="login custom-form">
                   <h2>Login</h2>
                   <form action="">
                     <div class="form-group">
-                        <label for="username">Username:</label>
-                        <input id="username" type="text" name="username" class="form-control" required="required">
+                        <label for="email">Email Address:</label>
+                        <input id="email" type="email" name="email" placeholder="Email" class="form-control" required="required">
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
                         <label for="password">Password: </label>
-                        <input id="password" type="password" name="password" class="form-control" required="required">
+                        <input id="password" type="password" name="password" placeholder="Passsword" class="form-control" required="required">
                         <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <input type="submit" value="Login" class="btn btn-primary btn-action d-block">
                     </div>
                     <div class="form-group">
                       <a href="">Forgot Password</a>
-                    </div>
-                    <div class="form-group">
-                      <input type="submit" value="Login" class="btn btn-primary btn-action d-block">
                     </div>
                   </form>
                 </div>

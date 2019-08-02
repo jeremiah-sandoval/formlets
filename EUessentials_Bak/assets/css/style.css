@@ -1393,10 +1393,6 @@ body {
 	margin-top: 20px;
 }
 
-.contact-form {
-	padding-top: 100px;
-}
-
 label {
 	display: block;
 	font-family: 'Montserrat';
@@ -1406,9 +1402,15 @@ label {
 	text-align: left;
 }
 
- .contact-form .form-control {
+ .custom-form h2{
+   font-weight: bold;
+   font-size: 24px;
+   margin-bottom: 20px;
+ }
+
+ .custom-form .form-control {
 	 border: none;
-  border-bottom: 2px solid #d0e1fb;
+  border-bottom: 2px solid rgb(255, 200, 150);
   border-radius: 1px;
   margin-top: 10px;
   background: #F9F9F9;
@@ -1422,14 +1424,14 @@ label {
 }
 
 .form-control:focus {
-  border-color: #2e7eed;
+  border-color: rgb(255, 146, 18)  ;
 	background: #F4F4F4;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
-.contact-form input[type="text"],
+.custom-form input[type="text"],
 textarea,
 textarea.form-control {
 	height: auto;

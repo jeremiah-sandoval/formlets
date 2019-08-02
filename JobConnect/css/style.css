@@ -2838,3 +2838,55 @@ li.at-rss a { background:#ff6600; }
 		display: none !important;
 	}
 }
+@media(max-width: 767px){
+	.at-jobaccordion .panel-heading div.panel-title span:first-child img{
+		height: auto;
+		width: auto;
+	}
+}
+
+/*==============================================
+			Our Process Style
+==============================================*/
+.at-ourprocess{
+	width: 100%;
+	float: left;
+	color: #333;
+	list-style: none;
+	font:300 16px/28px 'Rubik', Arial, Helvetica, sans-serif;
+}
+.at-ourprocess li{
+	width: 100%;
+	float: left;
+	background: #fff;
+	padding: 100px 0;
+	line-height: inherit;
+	list-style-type: none;
+}
+.at-ourprocess li:nth-child(even){
+	z-index: 2;
+	position: relative;
+	background: #f5f5f5;
+}
+.at-ourprocess li:nth-child(even):before,
+.at-ourprocess li:nth-child(even):after{
+	top: 0;
+	z-index: -1;
+	content: '';
+	width: 9999px;
+	height: 100%;
+	position: absolute;
+	background: #f5f5f5;
+}
+.at-ourprocess li:nth-child(even):before{left: 100%;}
+.at-ourprocess li:nth-child(even):after{right: 100%;}
+.at-ourprocess li:nth-child(odd) figure{
+	float: right;
+	margin: 0 0 0 60px;
+}
+.at-ourprocess li:nth-child(even) figure{
+	float: left;
+	margin: 0 60px 0 0;
+}
+.at-ourprocess li figure img{display: block;}
+.at-processcontent{overflow: hidden;}

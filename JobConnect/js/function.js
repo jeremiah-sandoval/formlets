@@ -96,6 +96,26 @@ jQuery(document).on('ready', function() {
 		});
 	}
 	/* -------------------------------------
+			WHAT WE DO SLIDER
+	-------------------------------------- */
+	if(jQuery('#at-servicesslider').length > 0){
+		jQuery('#at-servicesslider').owlCarousel({
+			items: 3,
+			nav: true,
+			margin: 30,
+			loop: true,
+			dots: true,
+			autoplay: true,
+			dotsClass: 'at-sliderdots',
+			navClass: ['at-prev', 'at-next'],
+			navContainerClass: 'at-slidernav',
+			responsive: {
+				0: { items: 1, },
+				768: { items: 3, },
+			}
+		});
+	}
+	/* -------------------------------------
 			TESTIMONIALS SLIDER
 	-------------------------------------- */
 	if(jQuery('#at-testimonialslider').length > 0){
@@ -115,11 +135,12 @@ jQuery(document).on('ready', function() {
 			}
 		});
 	}
+
 	/* -------------------------------------
 			TESTIMONIALS SLIDER
 	-------------------------------------- */
-	if(jQuery('.at-testimonial3gridslider').length > 0){
-		jQuery('.at-testimonial3gridslider').owlCarousel({
+	if(jQuery('#at-testimonial3gridslider').length > 0){
+		jQuery('#at-testimonial3gridslider').owlCarousel({
 			items: 3,
 			nav: true,
 			margin: 30,

@@ -61,7 +61,6 @@ jQuery(function($) {
        autoplayTimeout:2000,
        autoplayHoverPause:true,
        pagination: false,
-       nav: true,
       });
 
 
@@ -112,11 +111,11 @@ jQuery(function($) {
       $('.navbar-collapse').collapse('hide');
     });
 
-    // // Activate scrollspy to add active class to navbar items on scroll
-    // $('body').scrollspy({
-    //   target: '#mainNav',
-    //   offset: 54
-    // });
+    // Activate scrollspy to add active class to navbar items on scroll
+    $('body').scrollspy({
+      target: '#mainNav',
+      offset: 54
+    });
 
 
 

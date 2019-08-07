@@ -24,6 +24,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	color: #002e3a;
 	font-family: proxima-nova, sans-serif;
 	font-size: 15px;
 	font-weight: 400;
@@ -75,6 +76,10 @@ a{
   color: #00b9eb;
 }
 
+strong{
+	font-weight: 700;
+}
+
 /*----- Helper Classes -----*/
 
 html * {
@@ -97,13 +102,46 @@ body {
 .text-white{
   color: #fff !important;
 }
+.text-blue{
+	color: #00b4db !important;
+}
+.text-dark-blue{
+	color: #002e3a !important;
+}
 
+.orange-border-bottom{
+	border-bottom: 2px solid #f5c288;
+}
+.green-border-bottom{
+	border-bottom: 2px solid #00b4db;
+}
+.pink-border-bottom{
+	border-bottom: 2px solid #ddaac5;
+}
+
+.blue-overlay-img {
+	position:relative;
+	display:inline-block;
+}
+.blue-overlay-img:before {
+	content: ' ';
+	display: block;
+	position:absolute;
+	width:100%;
+	height:100%;
+	background: rgba(0, 176, 206, 1); /* rgb Color with alpha, you can also give it a bg color and set opacity: down. */
+	pointer-events: none;
+}
+.blue-overlay-img img{
+	mix-blend-mode: darken;
+}
 
 /*----- Header Styles -----*/
 
 #header{
-  background-color: #002e3a;
-  min-height: 600px;
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 46, 58, .9)),  url('../img/header-banner-01.jpg');
+	background-size: cover;
+  min-height: 800px;
   position: absolute;
 }
 #top-nav{
@@ -146,6 +184,59 @@ body {
 }
 
 #featured-news .container{
-  background-color: #fff !important;
+  background-color: #f2f2f2 !important;
   position: relative;
+}
+	.news-row .news-col{
+		padding: 20px;
+	}
+	.news-row .news-col:nth-child(1){
+		padding-right: 0;
+	}
+	.news-row .news-col:nth-child(3){
+		padding-left: 0;
+	}
+	.news-item .news-header h4{
+		padding: 10px;
+	}
+	.news-item .news-header .news-cat-auth{
+		padding: 0 10px 5px;
+	}
+	.news-item .news-header .news-cat-auth span{
+		font-size: 13px;
+	}
+#featured-news .news-item .news-img img{
+	height: 250px;
+	width: 100%;
+	object-fit: cover;
+}
+#recent-news .news-item .news-img img{
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+}
+
+@media(max-width:767px){
+	.news-row .news-col:nth-child(1){
+		padding-right: 20px;
+	}
+	.news-row .news-col:nth-child(3){
+		padding-left: 20px;
+	}
+}
+
+
+#footer{
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 46, 58, .9)),  url('../img/header-banner-01.jpg');
+	background-size: cover;
+}
+.footer-top{
+	padding: 30px 10px;
+}
+.footer-bottom{
+	background-color: #00a6ad;
+}
+.footer-bottom .footer-copy p{
+	margin: 0;
+	padding: 10px;
 }

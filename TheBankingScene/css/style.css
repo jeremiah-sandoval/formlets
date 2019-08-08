@@ -253,6 +253,9 @@ body {
 	.news-row .news-col:nth-child(3){
 		padding-left: 20px;
 	}
+	.ads-container{
+		display: none;
+	}
 }
 
 
@@ -262,6 +265,14 @@ body {
 }
 .footer-top{
 	padding: 30px 10px;
+}
+.footer-social .footer-social-icon i{
+	font-size: 36px;
+}
+.footer-social .footer-social-icon p{
+	font-size: 14px;
+	line-height: 18px;
+	color: #fff;
 }
 .footer-bottom{
 	background-color: #00a6ad;

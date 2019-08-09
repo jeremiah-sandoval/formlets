@@ -144,10 +144,16 @@ body {
 /*----- Header Styles -----*/
 
 #header{
+
+}
+#header .header-bg{
 	background-image:linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 46, 58, .9)),  url('../img/header-banner-01.jpg');
 	background-size: cover;
+	width: 100%;
   min-height: 800px;
+	mix-blend-mode: darken;
   position: absolute;
+	z-index: -1;
 }
 #top-nav{
   border-bottom: 1px solid #00b9eb;
@@ -182,9 +188,12 @@ body {
   width: auto;
 }
 
+.navbar-toggler{
+	display: none;
+}
+
 /*----- Content Styles -----*/
 #content.home-content{
-  padding-top: 280px;
   position: relative;
 }
 
@@ -255,6 +264,19 @@ body {
 	}
 	.ads-container{
 		display: none;
+	}
+}
+@media(max-width:991px){
+	#top-nav{
+		display: none;
+	}
+	.navbar-toggler{
+		display: block;
+	}
+}
+@media(min-width:992px){
+	#navbarNav{
+		display: block;
 	}
 }
 

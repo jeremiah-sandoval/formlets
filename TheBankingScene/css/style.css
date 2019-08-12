@@ -187,9 +187,13 @@ body {
   height: 80px;
   width: auto;
 }
-
-.navbar-toggler{
+#header-mobile-logo{
 	display: none;
+}
+
+#header-mobile-logo .navbar-toggler{
+	border: 2px solid #00b9eb;
+	border-radius: 100px;
 }
 
 /*----- Content Styles -----*/
@@ -249,13 +253,55 @@ body {
 	height: 200px;
 }
 
-@media(max-width:575px){
-	.news-item .news-img img{
-		height: 250px !important;
-		object-position: top;
+@media(min-width:992px){
+	#navbarNav{
+		display: block;
+	}
+}
+@media(max-width:991px){
+	#top-nav{
+		display: none;
+	}
+	#header-logo{
+		display: none;
+	}
+	#header-mobile-logo{
+		display: block;
+	}
+	#header-mobile-logo .mobile-logo-icon img,
+	#header-mobile-logo .mobile-logo-text img{
+		height: 70px;
+		width: auto;
+	}
+	#header-mobile-logo .navbar-toggler{
+		width: 70px;
+		height: 70px;
+	}
+	#header-mobile-logo .navbar-toggler i{
+		font-size: 30px;
+	}
+	#main-nav{
+		background-color: rgba(0, 46, 58, 1);
+		margin-top: 10px;
+	}
+	#main-nav .navbar li a{
+		text-align: center;
 	}
 }
 @media(max-width:767px){
+	#header-mobile-logo .mobile-logo-icon img,
+	#header-mobile-logo .mobile-logo-text img{
+		height: 55px;
+		width: auto;
+	}
+	#header-mobile-logo .navbar-toggler{
+		width: 55px;
+		height: 55px;
+		padding: 12px 0;
+	}
+	#header-mobile-logo .navbar-toggler i{
+		font-size: 24px;
+	}
 	.news-row .news-col:nth-child(1){
 		padding-right: 20px;
 	}
@@ -266,20 +312,42 @@ body {
 		display: none;
 	}
 }
-@media(max-width:991px){
-	#top-nav{
-		display: none;
-	}
-	.navbar-toggler{
-		display: block;
+@media(max-width:575px){
+	.news-item .news-img img{
+		height: 250px !important;
+		object-position: top;
 	}
 }
-@media(min-width:992px){
-	#navbarNav{
-		display: block;
+@media(max-width:520px){
+	#header-mobile-logo .mobile-logo-icon img,
+	#header-mobile-logo .mobile-logo-text img{
+		height: 45px;
+		width: auto;
+	}
+	#header-mobile-logo .navbar-toggler{
+		width: 45px;
+		height: 45px;
+		padding: 10px 0;
+	}
+	#header-mobile-logo .navbar-toggler i{
+		font-size: 18px;
 	}
 }
-
+@media(max-width:399px){
+	#header-mobile-logo .mobile-logo-icon img,
+	#header-mobile-logo .mobile-logo-text img{
+		height: 35px;
+		width: auto;
+	}
+	#header-mobile-logo .navbar-toggler{
+		width: 35px;
+		height: 35px;
+		padding: 5px 0;
+	}
+	#header-mobile-logo .navbar-toggler i{
+		font-size: 18px;
+	}
+}
 
 #footer{
 	background-image:linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 46, 58, .9)),  url('../img/header-banner-01.jpg');

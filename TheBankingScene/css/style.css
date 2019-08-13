@@ -39,19 +39,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 40px;
+	font-size: 36px;
 	font-weight: 400;
+	line-height: 40px;
 }
 h2{
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 400;
+	line-height: 36px;
 }
 h3{
   font-size: 28px;
   font-weight: 400;
+	line-height: 30px;
 }
 h4{
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
 }
 h5{
@@ -140,6 +143,30 @@ body {
 .blue-overlay-img img{
 	mix-blend-mode: darken;
 }
+.absolute-center{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.absolute-top{
+	position: absolute;
+	top: 15%;
+	left: 0;
+	width: 100%;
+}
+.absolute-bottom{
+	position: absolute;
+	bottom: 15%;
+	left: 0;
+	width: 100%;
+}
 
 /*----- Header Styles -----*/
 
@@ -150,7 +177,7 @@ body {
 	background-image:linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 46, 58, .9)),  url('../img/header-banner-01.jpg');
 	background-size: cover;
 	width: 100%;
-  min-height: 800px;
+  min-height: 900px;
 	mix-blend-mode: darken;
   position: absolute;
 	z-index: -1;
@@ -219,13 +246,19 @@ body {
 		overflow: hidden;
 		text-overflow: ellipsis;
 		display: -webkit-box;
-		line-height: 28px;
-		max-height: 76px;
+		line-height: 24px;
+		height: 48px;
 		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;
 	}
 	.news-item .news-header .news-cat-auth{
 		padding: 0 10px 5px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		height: 30px;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
 	}
 	.news-item .news-header .news-cat-auth span{
 		font-size: 14px;
@@ -371,4 +404,39 @@ body {
 	margin: 0;
 	padding: 10px;
 	font-size: 14px;
+}
+
+.fixed-social{
+	position: fixed;
+	top: 40%;
+	left: 0;
+}
+.fixed-social ul li{
+	padding: 10px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.fixed-social ul li.linkedin{ background-color: #1384c7; }
+.fixed-social ul li.twitter{ background-color: #78cbef; }
+.fixed-social ul li.facebook{ background-color: #547bbc; }
+.fixed-social ul li a{
+	color: #fff;
+}
+.fixed-chat{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 60px !important;
+	height: 60px !important;
+	border: 3px solid #fff;
+	border-radius: 60px;
+	text-align: center;
+	padding-top: 15px;
+	background: linear-gradient(to left,  #002e3a, #00b9eb);
+}
+.fixed-chat a{
+	color: #fff;
+	font-size: 24px;
 }

@@ -167,6 +167,9 @@ body {
 	left: 0;
 	width: 100%;
 }
+.navbar-right{
+	float: right;
+}
 
 /*----- Header Styles -----*/
 
@@ -182,6 +185,7 @@ body {
   position: absolute;
 	z-index: -1;
 }
+
 #top-nav{
   border-bottom: 1px solid #00b9eb;
   padding: 5px 0;
@@ -203,14 +207,14 @@ body {
   color: #fff;
   font-weight: 300;
 }
-#header-logo{
+#header #header-logo{
   padding: 50px 0;
 }
-#header-logo a{
+#header #header-logo a{
   display: block;
   text-align: center;
 }
-#header-logo a img{
+#header #header-logo a img{
   height: 80px;
   width: auto;
 }
@@ -223,9 +227,34 @@ body {
 	border-radius: 100px;
 }
 
+#header-2 .header-bg{
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 46, 58, .9)),  url('../img/header-banner-01.jpg');
+	background-size: cover;
+	width: 100%;
+  min-height: 900px;
+	mix-blend-mode: darken;
+  position: absolute;
+	z-index: -1;
+}
+#header-2 .navbar{
+	padding: 10px 0;
+}
+#header-2 #main-nav nav ul li{
+	padding: 0 0 0 15px;
+}
+#header-2 #main-nav nav ul li a{
+	padding: 0;
+}
 /*----- Content Styles -----*/
 #content.home-content{
   position: relative;
+}
+
+.page-title{
+	padding: 80px 0;
+}
+.page-title h1{
+	font-weight: 300;
 }
 
 #featured-news .container{
@@ -233,14 +262,14 @@ body {
   position: relative;
 }
 	.news-row .news-col{
-		padding: 20px;
+		padding: 15px;
 	}
-	.news-row .news-col:nth-child(1){
+	/* .news-row .news-col:nth-child(1){
 		padding-right: 0;
 	}
 	.news-row .news-col:nth-child(3){
 		padding-left: 0;
-	}
+	} */
 	.news-item .news-header h4{
 		margin: 10px;
 		overflow: hidden;

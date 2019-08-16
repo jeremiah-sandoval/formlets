@@ -621,3 +621,55 @@ body {
 	color: #fff;
 	font-size: 24px;
 }
+
+
+.orange-angle-select  {
+	display: block;
+	vertical-align:middle;
+	position:relative;
+}
+.orange-angle-select select {
+	line-height:normal;
+	height:38px;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	appearance:none;
+	width:200px;
+	border-radius:6px;
+	display:block;
+	width:100%;
+	border:1px solid #c8c8c8;
+	background:#fff url(images/inpbg.png) repeat-x 0 0;
+	color:#9f9f9f;
+	padding:8px 20px 7px 10px;
+	margin:0;
+	line-height:normal;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+}
+.ie8 .orange-angle-select select{padding-right:3px}
+.orange-angle-select select:focus {
+	background:#f9f9f9;
+	outline:none;
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.3), inset 0 0 7px rgba(100,100,100,0.3);
+	border-color:#00c0f3;
+}
+.orange-angle-select ::-ms-expand {
+ display:none;
+}
+.orange-angle-select:after{
+	content:"";
+	position:absolute;
+	z-index:2;
+	right:8px;
+	bottom:20%;
+	margin-top:-3px;
+	height:0;
+	width:0;
+	border-top:0px solid #f99300;
+	border-bottom:16px solid #f99300;
+	border-left:16px solid transparent;
+	pointer-events:none;
+}

@@ -139,7 +139,12 @@ body {
 .pink-border-bottom{
 	border-bottom: 2px solid #ddaac5;
 }
-
+.yellow-border-bottom{
+	border-bottom: 2px solid rgba(226, 192, 1, 1);
+}
+.bg-white{
+	background-color: #fff !important;
+}
 .bg-light{
 	background-color: #f2f2f2 !important;
 }
@@ -468,7 +473,7 @@ body {
 	height: 250px;
 }
 #recent-news .news-item .news-img img{
-	height: 200px;
+	height: 250px;
 }
 
 .user-details .u-avatar img{
@@ -480,6 +485,34 @@ body {
 	background-origin: border-box;
 	background-clip: content-box, border-box;
 	margin-bottom: 10px;
+}
+.mobile-only .user-details .u-avatar img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+}
+
+.studies-detail .container{
+	padding: 15px;
+}
+
+.post-header h1{
+	margin-bottom: 15px;
+}
+.post-share{
+	display: block;
+	text-align: right;
+}
+.post-share span,
+.post-share ul.social-share,
+.post-share ul.social-share li{
+	display: inline-block;
+	margin-left: 5px;
+}
+
+ul.comment-child li.comment-item{
+	padding-left: 30px;
+	border-left: 2px solid #f5c288;
 }
 
 #connect-with-us .connect-wrap{
@@ -545,7 +578,18 @@ body {
 		padding: .5rem 1rem;
 	}
 }
+@media(min-width: 768px){
+	.mobile-only{
+		display: none;
+	}
+}
 @media(max-width:767px){
+	.hide-mobile{
+		display: none;
+	}
+	.mobile-only{
+		display: block;
+	}
 	#header-mobile-logo .mobile-logo-icon img,
 	#header-mobile-logo .mobile-logo-text img{
 		height: 55px;
@@ -565,9 +609,13 @@ body {
 	.news-row .news-col:nth-child(3){
 		padding-left: 20px;
 	} */
+	.news-item .news-img img{
+		height: 280px;
+	}
 	.ads-container{
 		display: none;
 	}
+
 }
 @media(max-width:575px){
 	.news-item .news-img img{
@@ -648,17 +696,19 @@ body {
 	top: 40%;
 	left: 0;
 }
-.fixed-social ul li{
+.fixed-social ul li,
+ul.social-share li{
 	padding: 10px;
 	width: 40px;
 	height: 40px;
 	text-align: center;
 	margin-bottom: 10px;
 }
-.fixed-social ul li.linkedin{ background-color: #1384c7; }
-.fixed-social ul li.twitter{ background-color: #78cbef; }
-.fixed-social ul li.facebook{ background-color: #547bbc; }
-.fixed-social ul li a{
+.fixed-social ul li.linkedin, ul.social-share li.linkedin{ background-color: #1384c7; }
+.fixed-social ul li.twitter, ul.social-share li.twitter{ background-color: #78cbef; }
+.fixed-social ul li.facebook, ul.social-share li.facebook{ background-color: #547bbc; }
+.fixed-social ul li a,
+ul.social-share li a{
 	color: #fff;
 }
 .fixed-chat{

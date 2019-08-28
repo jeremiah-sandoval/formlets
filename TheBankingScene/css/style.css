@@ -870,3 +870,13 @@ ul.social-share li a{
 		font-size: 18px;
 	}
 }
+
+.news-item .news-img{
+	overflow: hidden;
+}
+.news-item .news-img img{
+	transition: transform .5s;
+}
+.news-item:hover .news-img img{
+	transform: scale(1.2);
+}

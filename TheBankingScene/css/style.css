@@ -420,6 +420,7 @@ body{
 }
 
 /*----- Content Styles -----*/
+.home-page #content{padding-top: 0 !important;}
 #content.home-content{
   position: relative;
 }

@@ -1,3 +1,10 @@
+/** Lazy Loading **/
+(function() {
+  var ll = new LazyLoad({
+    elements_selector: ".lazy",
+  });
+})();
+
 (function($) {
     $.fn.invisible = function() {
         return this.each(function() {

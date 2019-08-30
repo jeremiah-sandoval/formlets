@@ -25,45 +25,32 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	color: #002e3a;
-	font-family: 'Proxima Nova', Georgia, sans-serif;
+	font-family: 'proxima-nova';
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: normal;
 	line-height: 1.6;
 }
 
 /* --- Common Styles ---*/
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Proxima Nova', Georgia, sans-serif;
-  font-size: 16px;
-}
-
 h1 {
-	font-size: 36px;
-	font-weight: 400;
+	font-size: 48px;
+	font-weight: 200;
 	line-height: 40px;
 }
 h2{
-  font-size: 32px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: 200;
 	line-height: 36px;
 }
 h3{
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 200;
 	line-height: 30px;
 }
 h4{
   font-size: 20px;
-  font-weight: 400;
-}
-h5{
-  font-size: 18px;
-  font-weight: 400;
-}
-h6{
-  font-size: 16px;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 p {
@@ -140,13 +127,13 @@ body {
 }
 
 .orange-border-bottom{
-	border-bottom: 2px solid  #f99300;
+	border-bottom: 2px solid  #f7931e;
 }
 .blue-border-bottom{
 	border-bottom: 2px solid #00b9eb;
 }
 .pink-border-bottom{
-	border-bottom: 2px solid #ddaac5;
+	border-bottom: 2px solid #c86299;
 }
 .yellow-border-bottom{
 	border-bottom: 2px solid #e1cd57;
@@ -166,7 +153,8 @@ body {
 .gradient2-overlay-img,
 .gradient3-overlay-img,
 .gradient4-overlay-img,
-.gradient5-overlay-img
+.gradient5-overlay-img,
+.news-item:hover .news-img
  {
 	position:relative;
 	display:inline-block;
@@ -179,7 +167,8 @@ body {
 .gradient2-overlay-img:before,
 .gradient3-overlay-img:before,
 .gradient4-overlay-img:before,
-.gradient5-overlay-img:before {
+.gradient5-overlay-img:before,
+.news-item:hover .news-img:before {
 	content: ' ';
 	display: block;
 	position:absolute;
@@ -190,19 +179,21 @@ body {
 .blue-overlay-img img,
 .blue2-overlay-img img,
 .yellow-overlay-img img,
-.orange-overlay-img img{
+.orange-overlay-img img,
+#featured-news .news-item:hover .news-img img{
 	mix-blend-mode: multiply;
 }
 .gradient1-overlay-img img,
 .gradient2-overlay-img img,
 .gradient3-overlay-img img,
 .gradient4-overlay-img img,
-.gradient5-overlay-img img{
+.gradient5-overlay-img img,
+.news-item:hover .news-img img{
 	mix-blend-mode: soft-light;
 }
 
 .blue-overlay-img:before{
-	background: rgba(0, 176, 206, 1); /* rgb Color with alpha, you can also give it a bg color and set opacity: down. */
+	background: rgba(0, 185, 235, 1); /* rgb Color with alpha, you can also give it a bg color and set opacity: down. */
 }
 .blue2-overlay-img:before{
 	background: rgba(0, 46, 58, 1);
@@ -211,22 +202,23 @@ body {
 	background: rgba(226, 192, 1, 1);
 }
 .orange-overlay-img:before {
-	background: rgba(234, 140, 28, 1);
+	background: rgba(247, 147, 30, 1);
 }
-.gradient1-overlay-img:before{
-	background-image: linear-gradient(rgba(0, 46, 58, .8), rgba(0, 176, 206, .8));
+.gradient1-overlay-img:before,
+.news-item:hover .news-img:before{
+	background-image: linear-gradient(to left, rgba(0, 46, 58, .8), rgba(0, 185, 235, .8));
 }
 .gradient2-overlay-img:before{
-	background-image: linear-gradient(rgba(199, 98, 153, .8), rgba(0, 176, 206, .8));
+	background-image: linear-gradient(rgba(200, 98, 153, .8), rgba(0, 185, 235, .8));
 }
 .gradient3-overlay-img:before{
-	background-image: linear-gradient(rgba(246, 147, 31, .8), rgba(0, 176, 206, .8));
+	background-image: linear-gradient(rgba(247, 147, 30, .8), rgba(0, 185, 235, .8));
 }
 .gradient4-overlay-img:before{
-	background-image: linear-gradient(rgba(0, 160, 153, .8), rgba(0, 176, 206, .8));
+	background-image: linear-gradient(rgba(0, 160, 153, .8), rgba(0, 185, 235, .8));
 }
 .gradient5-overlay-img:before{
-	background-image: linear-gradient(rgba(224, 208, 88, .8), rgba(0, 176, 206, .8));
+	background-image: linear-gradient(rgba(224, 208, 88, .8), rgba(0, 185, 235, .8));
 }
 
 .absolute-center{
@@ -252,6 +244,20 @@ body {
 	bottom: 15%;
 	left: 0;
 	width: 100%;
+}
+.page-quote{
+	font-size: 40px;
+	font-weight: 200;
+	line-height: 48px;
+}
+.inline-quote{
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 24px;
+}
+.who-said{
+	font-size: 16px;
+	font-weight: normal;
 }
 .quote-1{
 	font-size: 24px;
@@ -357,19 +363,19 @@ body{
 	.orange-link.active a,
 	.orange-link:hover,
 	.orange-link a:hover{
-		color: rgba(234, 140, 28, 1) !important;
+		color: rgba(247, 147, 30, 1) !important;
 	}
 	.blue-link.active,
 	.blue-link .active a,
 	.blue-link:hover,
 	.blue-link a:hover{
-		color: rgba(0, 176, 206, 1) !important;
+		color: rgba(0, 185, 235, 1) !important;
 	}
 	.pink-link.active,
 	.pink-link.active a,
 	.pink-link:hover,
 	.pink-link a:hover{
-		color: rgba(199, 98, 153, 1) !important;
+		color: rgba(200, 98, 153, 1) !important;
 	}
 	.yellow-link.active,
 	.yellow-link.active a,
@@ -446,18 +452,36 @@ body{
 	.news-row .news-col:nth-child(3){
 		padding-left: 0;
 	} */
-	.news-item .news-header h4,
-	.press-item .press-header h4,
-	.social-item .social-header h4{
+	.news-item .news-header>a,
+	.press-item .press-header>a,
+	.social-item .social-header>a{
+		color: #002e3a;
+		font-size: 24px;
 		margin: 10px;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		display: -webkit-box;
-		line-height: 24px;
-		height: 48px;
+		line-height: 28px;
+		height: 56px;
 		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;
 	}
+
+	.news-item .news-header h4,
+	.press-item .press-header h4,
+	.social-item .social-header h4{
+		color: #002e3a;
+		font-size: 24px;
+		margin: 10px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		line-height: 28px;
+		height: 56px;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+	}
+
 	.news-item .news-header .news-cat-auth,
 	.press-item .press-header .press-cat-auth,
 	.social-item .social-header .social-visit{
@@ -503,11 +527,45 @@ body{
 	  right: 0;
 	  margin: auto;
 	}
+	.news-item .news-img{
+		overflow: hidden;
+	}
 	.news-item .news-img img{
 		height: 150px;
 		width: 100%;
 		object-fit: cover;
+		transition: transform .5s;
 	}
+
+	#featured-news .news-col:hover{
+		background-image: linear-gradient(to left, rgba(0, 160, 153, 1), rgba(0, 185, 235, 1));
+	}
+	#featured-news .news-item:hover,
+	#featured-news .news-item:hover a{
+		color: #ffffff;
+	}
+	.news-item:hover .news-img img{
+		transform: scale(1.05);
+	}
+
+	/* .news-item.orange-border-bottom:hover .news-header>a,
+	.press-item.orange-border-bottom:hover .press-header>a,
+	.social-item.orange-border-bottom:hover .social-header>a{
+		color: #f7931e;
+	}
+	.news-item.blue-border-bottom:hover .news-header>a,
+	.press-item.blue-border-bottom:hover .press-header>a,
+	.social-item.blue-border-bottom:hover .social-header>a{
+		color: #00b9eb;
+	}
+	.news-item.pink-border-bottom:hover .news-header>a,
+	.press-item.pink-border-bottom:hover .press-header>a,
+	.social-item.pink-border-bottom:hover .social-header>a{
+		color: #c86299;
+	} */
+
+
+
 #featured-news .news-item .news-img img{
 	height: 250px;
 }
@@ -641,14 +699,14 @@ ul.comment-child li.comment-item{
 	pointer-events:none;
 }
 .orange-angle-select:after{
-	border-top:0px solid #f99300;
-	border-bottom:16px solid #f99300;
+	border-top:0px solid #f7931e;
+	border-bottom:16px solid #f7931e;
 	border-left:16px solid transparent;
 }
 .orange-right-input:after{
 	border-top: 12px solid transparent;
 	border-bottom: 12px solid transparent;
-	border-left: 12px solid #f99300;
+	border-left: 12px solid #f7931e;
 }
 
 #footer{
@@ -732,6 +790,9 @@ ul.social-share li a{
 	#navbarNav-2{
 		display: block;
 	}
+	.footer-social .footer-social-icon{
+		text-align: center;
+	}
 }
 @media(max-width:991px){
 	#top-nav,
@@ -779,6 +840,18 @@ ul.social-share li a{
 	#header-2 #main-nav-2 nav ul li a{
 		padding: .5rem 1rem;
 	}
+
+	.ads-container{
+		display: none;
+	}
+
+	.footer-social .footer-social-icon i{
+		display: block;
+		text-align: right;
+	}
+	.footer-social .footer-social-icon p{
+		text-align: left;
+	}
 }
 @media(min-width: 768px){
 	.mobile-only{
@@ -818,13 +891,6 @@ ul.social-share li a{
 	.news-row .news-col:nth-child(3){
 		padding-left: 20px;
 	} */
-	.news-item .news-img img{
-		height: 280px;
-	}
-	.ads-container{
-		display: none;
-	}
-
 }
 @media(max-width:575px){
 	.news-item .news-img img{
@@ -869,14 +935,4 @@ ul.social-share li a{
 	#header-mobile-logo-2 .navbar-toggler i{
 		font-size: 18px;
 	}
-}
-
-.news-item .news-img{
-	overflow: hidden;
-}
-.news-item .news-img img{
-	transition: transform .5s;
-}
-.news-item:hover .news-img img{
-	transform: scale(1.2);
 }

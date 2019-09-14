@@ -300,16 +300,54 @@ body{
 }
 .header-bg{
 	width: 100%;
-  height: 800px;
+  height: 100vh;
 	position: absolute;
 	top: 0;
 	z-index: -1;
+	background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 	.header-bg img{
 		width: 100%;
-		height: 800px;
+		height: 100vh;
 		object-fit: cover;
 	}
+
+.home-page .header-bg{
+	background: linear-gradient(rgba(0, 46, 58, 1), rgba(0, 46, 58, 1)), url(../img/header-banner-01.jpg);
+	background-blend-mode: multiply !important;
+}
+.opinions-page .header-bg{
+	background: linear-gradient(rgba(247, 147, 30, .8), rgba(0, 185, 235, .8)), url(../img/opinions-banner-bg-bw.jpg);
+	background-blend-mode: hard-light !important;
+}
+.studies-page .header-bg{
+	background: linear-gradient(rgba(224, 208, 88, .7), rgba(0, 185, 235, .7)), url(../img/studies-banner-bg-bw.jpg);
+	background-blend-mode: normal !important;
+}
+.events-page .header-bg{
+	background: linear-gradient(to left, rgba(0, 46, 58, .7), rgba(0, 185, 235, .7)), url(../img/events-banner-bg-bw.jpg);
+	background-blend-mode: normal !important;
+}
+.partner-events-page .header-bg{
+	background: linear-gradient(rgba(200, 98, 153, .7), rgba(0, 185, 235, .7)), url(../img/events-banner-bg-bw.jpg);
+	background-blend-mode: normal !important;
+}
+.about-page .header-bg{
+	background: linear-gradient(to left, rgba(0, 46, 58, .7), rgba(0, 185, 235, .7)), url(../img/events-banner-bg-bw.jpg);
+	background-blend-mode: normal !important;
+}
+.connect-page .header-bg{
+	background: linear-gradient(to left, rgba(0, 46, 58, .7), rgba(0, 185, 235, .7)), url(../img/connect-banner-bg-bw.jpg);
+	background-blend-mode: normal !important;
+}
+.contact-page .header-bg{
+	background: linear-gradient(to left, rgba(0, 46, 58, .7), rgba(0, 185, 235, .7)), url(../img/contact-banner-bg-bw.jpg);
+	background-blend-mode: normal !important;
+}
+
 #header, #header-2{
 	z-index: 999;
 }
@@ -403,6 +441,11 @@ body{
 #main-nav-2 nav ul li.active a{
 	color: #00b9eb;
 }
+	.nav-mobile .dropdown-menu{
+		background-color: transparent !important;
+		border: 0 !important;
+	}
+
 #header #header-logo{
   padding: 50px 0;
 }
@@ -427,6 +470,7 @@ body{
 #header-2{
 	background-image: linear-gradient(to bottom, rgba(0,0,0,.9) 80px, rgba(0,0,0,0));
 	padding-bottom: 50px !important;
+	position: fixed;
 }
 #header-2 .navbar{
 	padding: 10px 0;
@@ -444,6 +488,10 @@ body{
 .home-page #content{padding-top: 0 !important;}
 #content.home-content{
   position: relative;
+}
+
+#content{
+	padding-top: 135px;
 }
 
 .page-title{
@@ -883,6 +931,9 @@ ul.social-share li a{
 	#navbarNav-2{
 		display: block;
 	}
+	.nav-mobile{
+		display: none;
+	}
 	.footer-social .footer-social-icon{
 		text-align: center;
 	}
@@ -934,6 +985,9 @@ ul.social-share li a{
 		padding: .5rem 1rem;
 	}
 
+	.nav-mobile{
+		display: block;
+	}
 	.ads-container{
 		display: none;
 	}

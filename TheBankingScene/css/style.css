@@ -1093,63 +1093,81 @@ ul.social-share li a{
 
 /** HUBSPOT SUBSCRIPTION FORM **/
 
-form#hsForm_0c7f7d95-2988-4a39-b495-847c14c521bd .field,
+form#hsForm_50fa3ece-56fc-4eb3-ab68-e5fb7ea492f7 .field,
 .hs-subscription-form .field{
 	width: 48%;
+	padding: .5rem!important;
   display: inline-block;
 }
-form#hsForm_0c7f7d95-2988-4a39-b495-847c14c521bd .field:nth-child(odd),
+form#hsForm_50fa3ece-56fc-4eb3-ab68-e5fb7ea492f7 .field:nth-child(odd),
 .hs-subscription-form .field:nth-child(odd){
 	clear: both;
 }
-form#hsForm_0c7f7d95-2988-4a39-b495-847c14c521bd .field:nth-child(even),
+form#hsForm_50fa3ece-56fc-4eb3-ab68-e5fb7ea492f7 .field:nth-child(even),
 .hs-subscription-form .field:nth-child(even){
 	margin-left: 2% !important;
 	float: right;
 }
-form#hsForm_0c7f7d95-2988-4a39-b495-847c14c521bd .field>label,
+form#hsForm_50fa3ece-56fc-4eb3-ab68-e5fb7ea492f7 .field>label,
 .hs-subscription-form .field>label{
 	display: none;
 }
-form#hsForm_0c7f7d95-2988-4a39-b495-847c14c521bd .field .hs-input,
+form#hsForm_50fa3ece-56fc-4eb3-ab68-e5fb7ea492f7 .field .hs-input,
 .hs-subscription-form .field .hs-input{
 	border-radius: 0px !important;
+	display: block;
+	width: 100%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	text-align: center;
 }
-form#hsForm_0c7f7d95-2988-4a39-b495-847c14c521bd .hs-submit,
+form#hsForm_50fa3ece-56fc-4eb3-ab68-e5fb7ea492f7 .hs-submit,
 .hs-subscription-form .hs-submit{
 	display: inline-block;
 	float: right;
 	width: 48%;
 }
-form#hsForm_0c7f7d95-2988-4a39-b495-847c14c521bd .hs-submit .actions,
+form#hsForm_50fa3ece-56fc-4eb3-ab68-e5fb7ea492f7 .hs-submit .actions,
 .hs-subscription-form .hs-submit .actions{
 	margin-top: 0 !important;
 	padding: 0 !important;
 }
-form#hsForm_0c7f7d95-2988-4a39-b495-847c14c521bd .hs-submit .actions input[type="submit"],
+form#hsForm_50fa3ece-56fc-4eb3-ab68-e5fb7ea492f7 .hs-submit .actions input[type="submit"],
 .hs-subscription-form .hs-submit .actions input[type="submit"]{
 	width: 100%;
 	border-radius: 0px !important;
 	border-color: #00b9eb !important;
 	background-color: #00b9eb !important;
+	padding: .375rem .75rem;
+	color: #ffffff;
 }
 
 .hubspot-link__container.sproket{
 	display: none !important;
 }
+.hs-error-msg{
+	color: #e1c24 !important;
+}
 
 @media(max-width: 767px){
-	form#hsForm_0c7f7d95-2988-4a39-b495-847c14c521bd .field,
+	form#hsForm_50fa3ece-56fc-4eb3-ab68-e5fb7ea492f7 .field,
 	.hs-subscription-form .field{
 		width: 100%;
 	  display: block;
 	}
-	form#hsForm_0c7f7d95-2988-4a39-b495-847c14c521bd .field:nth-child(even),
+	form#hsForm_50fa3ece-56fc-4eb3-ab68-e5fb7ea492f7 .field:nth-child(even),
 	.hs-subscription-form .field:nth-child(even){
 		margin-left: 0 !important;
 		float: none;
 	}
-	form#hsForm_0c7f7d95-2988-4a39-b495-847c14c521bd .hs-submit,
+	form#hsForm_50fa3ece-56fc-4eb3-ab68-e5fb7ea492f7 .hs-submit,
 	.hs-subscription-form .hs-submit{
 		display: block;
 		float: none;

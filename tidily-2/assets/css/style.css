@@ -668,7 +668,12 @@ body {
 	width: 20%;
 }
 #featureTab ul.nav-tabs li.nav-item a{
+	color: #495057;
 	padding: 30px;
+}
+#featureTab ul.nav-tabs li.nav-item a:hover,
+#featureTab ul.nav-tabs li.nav-item  .nav-link.active{
+	color: #0045ff;
 }
 #featureTab ul.nav-tabs li.nav-item a i,
 #featureTab ul.nav-tabs li.nav-item a span{
@@ -681,6 +686,7 @@ body {
 	font-family: 'Montserrat';
 	font-size: 14px;
 	padding: 10px 0 0;
+	line-height: 20px;
 }
 
 #featureTabContent img,
@@ -1591,7 +1597,16 @@ body {
 -------------- Media Queries ---------------
 ------------------------------------------*/
 
+@media(max-width: 575px){
+	#featureTab ul.nav-tabs li.nav-item{
+		width: 100%;
+	}
+}
+
 @media only screen and (min-width: 767px) {
+	#featureTab ul.nav-tabs li.nav-item a{
+		padding: 15px;
+	}
 
 	.navbar-nav {
 			margin-top: 0;
